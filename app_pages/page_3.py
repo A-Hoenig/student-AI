@@ -2,4 +2,5 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 def page_3_body():
-    st.write("## Page 3")
+    st.write("## EDA")
+    st.write("### Exploratory Data Analysis")

@@ -31,7 +31,7 @@ The target(s) will be the predicted score for Math, Reading and Writing for a gi
 The following metrics were decided with the stakeholder (school administration) that is looking to incorporate ML capability in supporting their counselling staff to monitor and help students achieve the academic standard.
 
 ### Purpose:
-The primary objective is to create an interactive, user-friendly dashboard for school counselors and educators. This tool aims to predict student performance in math, reading, and writing, focusing on identifying students at risk of not achieving a passing grade. The dashboard will facilitate early intervention and personalized support strategies.
+The primary objective is to create an interactive, user-friendly dashboard for school counselors and educators. This tool aims to predict student performance in math, reading, and writing, focusing on identifying students at risk of not achieving a passing grade. The dashboard will facilitate early intervention and personalized support strategies. The dashboard should be deployed to their internal server and allow counsellors secure access to the database and prediction model so they can prepapre for student counselling sessions.
 
 
 ## Hypothesis
@@ -62,9 +62,10 @@ transportation will presumanbly have some influence again in socio-economic term
 I hypothesize that the mount of study time per week devoted to exam preparation will have a significant impact on student performance.
 
 
-
 ## The rationale to map the business requirements to the Data Visualizations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualizations and ML tasks
+* The dataset with final results for Math, Reading and Writing will allow an EDA to identify which features of the data set have the most influence on the student performance.  This will allow a reasonable assessment of the evaluation of my hypothesies and corrobrate the schools assumptions so far. 
+* The new step and direect business requirement will be to train a machine learning algorithm to predict the final score on a new class of students on unseen data. To achieve this, some feature enineering might be neccessary to encode categorical varibles into numerical values which can be interpreted by an ML pipleine. The initial approach will be supervised learning on known student results while allowing the algorithm to identify the key features that have the most influence on teh result.
+* To satisfy the busniess requirement, we aim to train the model to have a greater than 0.8 accuracy in predicting the scores for math, reading and writing
 
 
 ## ML Business Case
@@ -78,11 +79,16 @@ I hypothesize that the mount of study time per week devoted to exam preparation 
 * It will flag students who are likely to struggle in achieving passing grades, enabling timely intervention.
 * The dashboard will generate reports listing students who may require additional support or resources.
 
+### Dashboard Pages:
 
+1. **Project Summary** - An introduction to the business requirement and key features of the dataset. Also an bsic instruction of how to use the dashboard
+2. **Project Hypothesis and evaluation** - presentation of the project hyposthesis and potential outcomes
+3. **Exploratory Data Analysis (EDA)** - EDA of the dataset and explanation of the dataset strengths and weaknesses
+4. **Report Generator** Page to generate a report of all students enrolled in the school in danger of not reaching a passing grade in Math. The user will be able to selecte the passing grade as a percentage
+5. **Prediction Engine** - Page to allow the counsellor to input all known variables about a new student (or changes in circumstance of a known student) and predict the current score probablilty.
+6. **Technical Explanations** Summary page for education experts interested in the model training steps and performance levels.
 
 ## Unfixed Bugs
- 
-
  
 ## Deployment
 ### Heroku
