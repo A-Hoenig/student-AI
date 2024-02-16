@@ -9,7 +9,8 @@ from app_pages.page_4 import page_4_body
 from app_pages.page_5 import page_5_body
 from app_pages.page_6 import page_6_body
 
-app = MultiPage(app_name="Student AI")  # Create an instance of the app
+# Create an instance of the app
+app = MultiPage(app_name="Student AI")
 
 # Add your app pages here using .add_page()
 app.add_page("Introduction", page_1_body)
