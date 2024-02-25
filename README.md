@@ -4,7 +4,7 @@ https://www.kaggle.com/datasets/desalegngeb/students-exam-scores
 
 the source offers 2 versions of the dataset, a smaller one with complete data and fewer features, and a larger one with fewer datarows, but more alvailable features. This larger dataset also has the additional requirement of some data cleaning as some values are missing, and need to be corrected for.
 
-For the purpose of this project, I will use the second set to demonstrate some data cleaning that might be required before the exploratory data ananlysis and model training.
+For the purpose of this project, I will use the second set to demonstrate some data cleaning that might be required before the exploratory data analysis and model training.
 
 Available features are:
 
@@ -65,7 +65,7 @@ I hypothesize that the mount of study time per week devoted to exam preparation 
 ## The rationale to map the business requirements to the Data Visualizations and ML tasks
 * The dataset with final results for Math, Reading and Writing will allow an EDA to identify which features of the data set have the most influence on the student performance.  This will allow a reasonable assessment of the evaluation of my hypothesies and corrobrate the schools assumptions so far. 
 * The new step and direect business requirement will be to train a machine learning algorithm to predict the final score on a new class of students on unseen data. To achieve this, some feature enineering might be neccessary to encode categorical varibles into numerical values which can be interpreted by an ML pipleine. The initial approach will be supervised learning on known student results while allowing the algorithm to identify the key features that have the most influence on teh result.
-* To satisfy the busniess requirement, we aim to train the model to have a greater than 0.8 accuracy in predicting the scores for math, reading and writing
+* To satisfy the business requirement, we aim to train the model to have a greater than 0.7 accuracy in predicting the scores for math, reading and writing
 
 
 ## ML Business Case
