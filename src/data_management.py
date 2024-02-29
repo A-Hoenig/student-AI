@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 from PIL import Image
 
-IMAGE_PATH = "src/doc_images/"
+IMAGE_PATH = "outputs/images/"
 
 
 @st.cache(suppress_st_warning=True, allow_output_mutation=True)
@@ -22,6 +22,18 @@ def load_pkl_file(file_path):
     return joblib.load(filename=file_path)
 
 def load_image(image_name):
-    full_path = IMAGE_PATH + image_name 
-    image = Image.open(full_path)
-    return image
+    # possible extensions
+    extensions = ['.png', '.jpg', '.jpeg', '.gif']
+    
+    for ext in extensions:
+        try:
+            # Attempt to open the image with each extension
+            full_path = f"{IMAGE_PATH}{image_name}{ext}"
+            image = Image.open(full_path)
+            return image
+        except FileNotFoundError:
+            # If not found continue to the next extension type
+            continue
+    
+    # no file is found 
+    return None
