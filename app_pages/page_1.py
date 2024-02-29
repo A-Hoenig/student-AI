@@ -1,23 +1,24 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 
+
 def page_1_body():
     st.write("## Project Summary")
 
     st.info(
-    "### Rationale\n"
-    "A private school wants to improve their student passing rate by "
-    "optimizing the support for students who may struggle to graduate.\n\n"
-    "They have heard of machine learning but are not sure if it will "
-    "be able to assist in their goals. They are asking us to analyse a "
-    "given data set of previous students from several locations to see if ML "
-    "can glean insights into what factors influence a students performance the"
-    " most.\n\n"
-    "Armed with that knowledge they want to test if an ML tool could predict "
-    "the final score a student will likely achieve. The ultimate goal is to "
-    "identify which students will need help ahead of time and ensure the "
-    "necessary steps are in place before it is too late to intervene and a "
-    "student fails."
+        "### Rationale\n"
+        "A private school wants to improve their student passing rate by "
+        "optimizing the support for students who may struggle to graduate.\n\n"
+        "They have heard of machine learning but are not sure if it will "
+        "be able to assist in their goals. They are asking us to analyse a "
+        "given data set of previous students from all locations to see if ML"
+        " can get insights into what factors influence a students performance"
+        " the most.\n\n"
+        "Armed with that knowledge they want to test if an ML tool could "
+        "predict the final score a student will likely achieve. The ultimate"
+        " goal is to identify which students will need help ahead of time and "
+        "ensure the necessary steps are in place before it is too late to "
+        "intervene and a student fails."
     )
 
     st.info(
@@ -29,8 +30,8 @@ def page_1_body():
         "2. Provide an interface to an ML algorithm that, given a student's"
         " data, can predict their final score and flag students who will need "
         "support.\n"
-        "3. Due to personal sensitive data being involved, the interface should"
-        "be deployed on their own server and offer a simple dashboard for school"
+        "3. Due to personal data being involved, the interface should be "
+        "deployed on their own server and offer a simple dashboard for school"
         " counsellors."
     )
 
@@ -38,8 +39,8 @@ def page_1_body():
         "### Initial Strategy\n"
         "To achieve the objectives the following will be implemented:\n"
         "* Hypothesis page - narrow down the expectations\n"
-        "* Exploratory Data Analysis - assess data and see if ML is an option\n"
-        "* Predict Page - allow counsellor to input new student info and make a"
+        "* Exploratory Data Analysis- assess data and see if ML is an option\n"
+        "* Predict Page - allow counsellor to add new student info and make a"
         " prediction\n"
         "* Report Page - allow counsellor to upload a list of students and"
         "produce a report of students likely to need help\n"
@@ -51,8 +52,8 @@ def page_1_body():
         "### Ethical Assessment\n"
         "The dataset is anonymized and ethnic grouping only references Group"
         "A-E without specific race categories being named. This is useful for"
-        " handling the data in the exploratory phase. In the deployed phase the"
-        " data should remain anonymized and only specific staff must have "
+        " handling the data in the exploratory phase. In the deployed phase,"
+        "the data should remain anonymized and only specific staff must have "
         "access to lists that can link an entry to a specific student at the "
         "school. This information must be protected.\n\n"
         "*For the purpose of this project, the all data is fictitious and "
@@ -65,14 +66,14 @@ def page_1_body():
         " 1 or 2 or 3 etc\n"
         "* Numerical Variables are continuous between 2 limits and can be"
         " integers or even decimals\n\n"
-        "The documentation of this project will freuently use this nomenclature."
+        "This project will frqeuently use ML nomenclature."
     )
 
     st.info(
         "### Dataset Introduction\n"
-        "The provided data set was very extensive, but does contain some missing"
-        "values.\n The following student information (**FEATURES**) are in the "
-        "data set.\n\n"
+        "The provided data set was very extensive, but contained some missing"
+        "values.\n The following student information (**FEATURES**) are in the"
+        " data set.\n\n"
 
         "#### GENDER (Categorical)\n"
         "Two values only (non binary / none not considered).\n"
@@ -100,8 +101,8 @@ def page_1_body():
 
         "#### LUNCH TYPE (Categorical)\n"
         "Two values only. The assumption made was that Standard indicates a "
-        "homemade lunch whereas free/reduced indicates some kind of government "
-        "assistance program.\n"
+        "homemade lunch whereas free/reduced indicates some kind of government"
+        " assistance program.\n"
         "* Standard\n"
         "* Free / Reduced\n"
 
@@ -154,7 +155,7 @@ def page_1_body():
         "* '> 10'\n\n"
 
         "#### TARGET variables (Numerical)\n"
-        "Numerical Value from 0 - 100. The presumption is that it is a standard"
+        "Numerical Value from 0-100. The presumption is that it is a standard"
         " percent value.\n"
         "No information is given to a specific passing grade or "
         "classification of performance.\n"
@@ -163,3 +164,8 @@ def page_1_body():
         "* FINAL READING SCORE **(TARGET)**\n"
         "* FINAL WRITING SCORE **(TARGET)**\n"
     )
+
+    st.write("the detailed files behind this project can be viewed here:\n\n"
+        "https://github.com/A-Hoenig/student-AI"
+    )
+    
