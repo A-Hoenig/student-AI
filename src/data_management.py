@@ -36,4 +36,5 @@ def load_image(image_name):
             continue
     
     # no file is found 
-    return None
+    image = Image.open("src/doc_images/image-not-found.jpeg")
+    return image

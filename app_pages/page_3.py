@@ -1,6 +1,5 @@
 import os
 import streamlit as st
-import pandas as pd
 from src.data_management import load_original_data, load_cleaned_data, load_image
 
 
@@ -13,7 +12,7 @@ def page_3_body():
     st.info(
         "This dataset is very comprehensive with over 30000 rows and 14"
         " Columns. Scanning through, you can see some cells containing"
-        " NaN which stands for Not a Number. This is where the data import"
+        " <NA> which stands for not available. This is where the data import"
         " found a blank cell. The unnamed column is also redundant and will "
         "be removed in a later step. We can summarize the empty cells with a "
         "function:\n"
