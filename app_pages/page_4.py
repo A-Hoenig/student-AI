@@ -2,6 +2,9 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from src.data_management import load_image
 
+# set global width for all pictures
+WIDTH=500
+
 
 def page_4_body():
     st.write(
@@ -18,7 +21,7 @@ def page_4_body():
     st.image(
         load_image("analysis-gender"),
         caption='A plot of gender data',
-        width=300,
+        width=WIDTH,
         )
     st.info(
         "This shows that the expected distribution of gender among students.\n"
@@ -32,7 +35,7 @@ def page_4_body():
     st.image(
         load_image("analysis-ethnicgroup"),
         caption='A plot of all 5 Ethnic Groups (A-E)',
-        width=300,
+        width=WIDTH,
         )
     st.info(
         "Shows that group C is the clear majority in this specific school,"
@@ -43,11 +46,71 @@ def page_4_body():
         " has a significant influence on the overall score of a student."
     )
 
-    st.write("### VAR\n")
+    st.write("### PARENTAL EDUCATION\n")
     st.image(
-        load_image(" "),
+        load_image("analysis-parenteduc"),
         caption='caption',
-        width=300,
+        width=WIDTH,
+        )
+    st.info(
+        "Analysis"
+    )
+
+    st.write("### LUNCH TYPE\n")
+    st.image(
+        load_image("analysis-lunchtype"),
+        caption='caption',
+        width=WIDTH,
+        )
+    st.info(
+        "Analysis"
+    )
+
+    st.write("### TEST PREPARATION\n")
+    st.image(
+        load_image("analysis-testprep"),
+        caption='caption',
+        width=WIDTH,
+        )
+    st.info(
+        "Analysis"
+    )
+
+    st.write("### PARENT MARITAL STATUS\n")
+    st.image(
+        load_image("analysis-marriage"),
+        caption='caption',
+        width=WIDTH,
+        )
+    st.info(
+        "Analysis"
+    )
+
+    st.write("### PRACTICE SPORT\n")
+    st.image(
+        load_image("analysis-sport"),
+        caption='caption',
+        width=WIDTH,
+        )
+    st.info(
+        "Analysis"
+    )
+
+    st.write("### FIRST CHILD\n")
+    st.image(
+        load_image("analysis-firstChild"),
+        caption='caption',
+        width=WIDTH,
+        )
+    st.info(
+        "Analysis"
+    )
+
+    st.write("### NUMBER OF SIBLINGS\n")
+    st.image(
+        load_image("analysis-siblings"),
+        caption='caption',
+        width=WIDTH,
         )
     st.info(
         "Analysis"
