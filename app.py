@@ -8,17 +8,19 @@ from app_pages.page_3 import page_3_body
 from app_pages.page_4 import page_4_body
 from app_pages.page_5 import page_5_body
 from app_pages.page_6 import page_6_body
+from app_pages.page_7 import page_7_body
 
 # Create an instance of the app
 app = MultiPage(app_name="Student AI")
 
 # Add your app pages here using .add_page()
 app.add_page("Introduction", page_1_body)
-app.add_page("Hypothesis", page_2_body)
-app.add_page("EDA", page_3_body)
-app.add_page("Report", page_4_body)
-app.add_page("Predict", page_5_body)
-app.add_page("AI performance", page_6_body)
+app.add_page("Hypotheses", page_2_body)
+app.add_page("Dataset", page_3_body)
+app.add_page("EDA", page_4_body)
+app.add_page("Report", page_5_body)
+app.add_page("Predict", page_6_body)
+app.add_page("AI performance", page_7_body)
 
 
 app.run()  # Run the app
