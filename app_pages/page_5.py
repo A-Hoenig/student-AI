@@ -8,21 +8,32 @@ from src.ml.prediction_engine import (
 
 def page_5_body():
     st.write("## Prediction Report")
-    st.write("### Generate Reports")
 
     csv_file = st.file_uploader(
         "Upload CSV file with student features", type=['csv'])
     
     if csv_file is not None:
+        csv_file.seek(0)
+        df = pd.read_csv(csv_file)
+        
+        # Check for missing values
+        if df.isnull().values.any():
+            st.error('The uploaded CSV file contains missing values.\n'
+            'Please correct them and upload the file again.')
+            return 
+        
         subjects = ['math', 'reading', 'writing']
+
+        # Process file
         for subject in subjects:
             st.write(f"## {subject.capitalize()} Report")
+            csv_file.seek(0)
             report_df = batch_process_scores(csv_file, subject)
             
-            # display dynamic filter labels
+            # Display dynamic filter labels
             unique_labels = report_df[f'{subject} Prediction'].unique()
             selected_labels = st.multiselect(
-                f"Filter by {subject.capitalize()} Prediction Labels:",
+                f"Filter options for {subject.capitalize()}:",
                 options=unique_labels, default=unique_labels)
             
             # Filter dataframe
@@ -37,11 +48,15 @@ def batch_process_scores(csv_file_path, score_type):
     VERSION = "v1"
 
     # load given model
-    pipeline = load_pkl_file(f"{PATH}{score_type}/{VERSION}/{score_type}-model.pkl")
-    label_map = load_pkl_file(f"{PATH}{score_type}/{VERSION}/{score_type}-labels.pkl")
+    pipeline = load_pkl_file(
+        f"{PATH}{score_type}/{VERSION}/{score_type}-model.pkl")
+    label_map = load_pkl_file(
+        f"{PATH}{score_type}/{VERSION}/{score_type}-labels.pkl")
 
     # load trained features
-    features = pd.read_csv(f"{PATH}{score_type}/{VERSION}/{score_type}-train-features.csv").columns.tolist()
+    features = pd.read_csv(
+        f"{PATH}{score_type}/{VERSION}/{score_type}"
+        "-train-features.csv").columns.tolist()
 
     # load csv from drag and drop object 
     csv_file_path.seek(0)
