@@ -10,7 +10,7 @@ def page_5_body():
     st.write("## Prediction Report")
 
     csv_file = st.file_uploader(
-        "Upload CSV file with student features", type=['csv'])
+        "Upload CSV file student list", type=['csv'])
     
     if csv_file is not None:
         csv_file.seek(0)
