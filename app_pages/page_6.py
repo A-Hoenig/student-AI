@@ -75,14 +75,6 @@ def AcquireInputs():
     input_features = pd.DataFrame([], index=[0])
 
     with column1:
-        feature = 'LunchType'
-        streamlit_widget = st.selectbox(
-            label=feature,
-            options=df[feature].unique()
-        )
-    input_features[feature] = streamlit_widget
-
-    with column2:
         feature = 'EthnicGroup'
         streamlit_widget = st.selectbox(
             label=feature,
@@ -90,8 +82,16 @@ def AcquireInputs():
         )
     input_features[feature] = streamlit_widget
 
-    with column3:
+    with column2:
         feature = 'ParentEduc'
+        streamlit_widget = st.selectbox(
+            label=feature,
+            options=df[feature].unique()
+        )
+    input_features[feature] = streamlit_widget
+
+    with column3:
+        feature = 'LunchType'
         streamlit_widget = st.selectbox(
             label=feature,
             options=df[feature].unique()
