@@ -8,19 +8,28 @@ from src.ml.prediction_engine import (
 
 def page_5_body():
     st.write("## Prediction Report")
+    st.write("### Generate Reports")
 
-    features = ['ParentEduc', 'EthnicGroup']
-
-    st.title("Batch Process Student Scores")
-    csv_file = st.file_uploader("Upload CSV file with student features", type=['csv'])
+    csv_file = st.file_uploader(
+        "Upload CSV file with student features", type=['csv'])
     
     if csv_file is not None:
         subjects = ['math', 'reading', 'writing']
         for subject in subjects:
             st.write(f"## {subject.capitalize()} Report")
             report_df = batch_process_scores(csv_file, subject)
-            st.dataframe(report_df)
-
+            
+            # display dynamic filter labels
+            unique_labels = report_df[f'{subject} Prediction'].unique()
+            selected_labels = st.multiselect(
+                f"Filter by {subject.capitalize()} Prediction Labels:",
+                options=unique_labels, default=unique_labels)
+            
+            # Filter dataframe
+            filtered_df = report_df[
+                report_df[f'{subject} Prediction'].isin(selected_labels)]
+            
+            st.dataframe(filtered_df)
 
 
 def batch_process_scores(csv_file_path, score_type):
@@ -55,6 +64,7 @@ def batch_process_scores(csv_file_path, score_type):
     # create dataframe for outout
     results['Student ID'] = student_ids
     results[f'{score_type} Prediction'] = labels
-    results[f'{score_type} Probability'] = predictions_proba * 100
+    prob = (predictions_proba * 100).round(2)
+    results[f'{score_type} Probability'] = prob
 
     return results
