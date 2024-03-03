@@ -44,6 +44,9 @@ def load_text(filename):
     # Define the full path
     filepath = os.path.join(IMAGE_PATH, filename)
     
-    # Load and return the text
-    with open(filepath, 'r') as file:
-        return file.read()
+    try:
+        # Load and return text
+        with open(filepath, 'r') as file:
+            return file.read()
+    except FileNotFoundError:
+        return None
