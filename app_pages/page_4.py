@@ -5,7 +5,7 @@ from src.data_management import load_image, load_pkl_file, load_text
 
 # set global width for all pictures
 WIDTH=300
-columns_list = ['Gender', 'EthnicGroup', 'ParentEduc', 'LunchType', 
+columns_list = ['Dude', 'Gender', 'EthnicGroup', 'ParentEduc', 'LunchType', 
                     'TestPrep', 'ParentMaritalStatus', 'PracticeSport', 
                     'IsFirstChild', 'NrSiblings', 'TransportMeans']
 

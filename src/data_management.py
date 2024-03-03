@@ -20,7 +20,12 @@ def load_cleaned_data():
     return df
 
 def load_pkl_file(file_path):
-    return joblib.load(filename=file_path)
+    try:
+        # Attempt to load the file
+        return joblib.load(filename=file_path)
+    except FileNotFoundError:
+        # If not found
+        return None
 
 def load_image(image_name):
     # possible extensions
