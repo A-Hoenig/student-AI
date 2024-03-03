@@ -1,12 +1,35 @@
 import streamlit as st
 import matplotlib.pyplot as plt
-from src.data_management import load_image
+from src.data_management import load_image, load_pkl_file
+
 
 # set global width for all pictures
-WIDTH=500
+WIDTH=300
+
+
+def render_column_data(column):
+
+    # Display analysis for each variable
+    st.markdown("""---""")
+    st.write(f"# {column}\n")
+    st.image(
+        load_image(f"{column}-distribution"),
+        caption=f'A distribution-plot of {column} data',
+        width=WIDTH,
+        )
+    st.image(
+        load_image(f"{column}-boxplot"),
+        caption=f'A box-plot of {column} data',
+        use_column_width = 'auto',
+        )
+
+    st.write(f"## Exam results based on {column}")
+    df = load_pkl_file(f'outputs/images/plots/{column}-data.pkl')  
+    st.write(df)  
 
 
 def page_4_body():
+
     st.write(
         "## Exploratory Data Analysis\n"
         "To gain insight into the data meaning and possible conclusions"
@@ -15,14 +38,11 @@ def page_4_body():
         "Below, each variable will be visualized and assessed. The average"
         " (mean) of Maths, Reading and Writing was also added to assess"
         " student overall performance related to that variable.\n"
-    )
-
-    st.write("### GENDER\n")
-    st.image(
-        load_image("analysis-gender"),
-        caption='A plot of gender data',
-        width=WIDTH,
         )
+    
+    # display individual column / variable reports
+    render_column_data('Gender')
+    
     st.info(
         "This shows that the expected distribution of gender among students.\n"
         "\nThe mean shows that female students on average have better results,"
@@ -31,12 +51,7 @@ def page_4_body():
         " however, is **not** a major contributing factor."
     )
 
-    st.write("### ETHNIC GROUP\n")
-    st.image(
-        load_image("analysis-ethnicgroup"),
-        caption='A plot of all 5 Ethnic Groups (A-E)',
-        width=WIDTH,
-        )
+    render_column_data('EthnicGroup')
     st.info(
         "Shows that group C is the clear majority in this specific school,"
         " and group A is the clear minority.\n\n"

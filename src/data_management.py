@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 from PIL import Image
 
-IMAGE_PATH = "outputs/images/"
+IMAGE_PATH = "outputs/images/plots/"
 
 
 @st.cache(suppress_st_warning=True, allow_output_mutation=True)
