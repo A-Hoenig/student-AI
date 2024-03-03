@@ -7,6 +7,7 @@ from src.ml.prediction_engine import (
 
 
 def page_5_body():
+    
     st.write("## Prediction Report")
 
     csv_file = st.file_uploader(
@@ -25,6 +26,7 @@ def page_5_body():
         subjects = ['math', 'reading', 'writing']
 
         # Process file
+     
         for subject in subjects:
             st.write(f"## {subject.capitalize()} Report")
             csv_file.seek(0)
@@ -41,6 +43,7 @@ def page_5_body():
                 report_df[f'{subject} Prediction'].isin(selected_labels)]
             
             st.dataframe(filtered_df)
+
 
 
 def batch_process_scores(csv_file_path, score_type):

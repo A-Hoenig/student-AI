@@ -37,7 +37,7 @@ def render_column_data(column):
     mean_min = df['MeanScore'].iloc[-1]
     spread = mean_max - mean_min
     spread_rounded = round(spread, 2)
-    st.info(f'**Mean Range: {spread_rounded}**')
+    st.warning(f'**Mean Range: {spread_rounded}**')
 
     analysis = load_text(f'{column}-analysis.txt')
     if analysis:
@@ -56,7 +56,7 @@ def page_4_body():
         " student overall performance related to that variable.\n"
         )
 
-    selected_column = st.selectbox(
+    selected_column = st.radio(
         'Select a variable for analysis:', columns_list)
 
     render_column_data(selected_column)
