@@ -1,0 +1,3 @@
+Rather obviously whether or not a student completed their test
+preparation has a 7 percent impact on their overall performance. I expect
+TestPrep will have measuable impact on teh predictive model.

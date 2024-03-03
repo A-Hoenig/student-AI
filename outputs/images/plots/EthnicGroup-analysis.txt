@@ -1,0 +1,6 @@
+Shows that group C is the clear majority in this specific school,
+    and group A is the clear minority.
+    However, Group E, the second minority, is significantly better
+    than the other groups, while GroupA performs the worst.
+    With a difference of 9 percent on average, it is clear that EthnicGroup
+    has a significant influence on the overall score of a student.

@@ -1,0 +1,4 @@
+This shows that Parental Education plays a significant role in
+ the students performance with a Mean spread of 10. Students who'se parents
+have a masters degree on average are 10 percent better than students with 
+parents who only completed high school.

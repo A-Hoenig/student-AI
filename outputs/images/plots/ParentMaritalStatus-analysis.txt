@@ -1,0 +1,2 @@
+ParentMaritalStatus has no impact on student performance as can be seen 
+from a mean range of 0.7

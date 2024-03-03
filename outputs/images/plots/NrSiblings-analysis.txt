@@ -1,0 +1,4 @@
+The number of siblings has no bearing on the students performace
+most evident by the fact that according to the dataset, students with ZERO
+or 7(!) siblings perform the same in the exam. This veriable will not be a
+significant contributer to the model.
