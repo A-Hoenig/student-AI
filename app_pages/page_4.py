@@ -3,16 +3,19 @@ import matplotlib.pyplot as plt
 from src.data_management import load_image, load_pkl_file, load_text
 
 
-# set global width for all pictures
+# set global variables
+# std histogram width
 WIDTH=300
-columns_list = ['Dude', 'Gender', 'EthnicGroup', 'ParentEduc', 'LunchType', 
+
+#Columns user can select in dropdown
+columns_list = ['Gender', 'EthnicGroup', 'ParentEduc', 'LunchType', 
                     'TestPrep', 'ParentMaritalStatus', 'PracticeSport', 
                     'IsFirstChild', 'NrSiblings', 'TransportMeans']
 
 
 def render_column_data(column):
 
-    # Display analysis for each variable
+    # Display analysis for each variable/column
     st.markdown("""---""")
     st.write(f"# {column}\n")
     st.image(
@@ -29,6 +32,12 @@ def render_column_data(column):
     st.write(f"## Exam results based on {column}")
     df = load_pkl_file(f'outputs/images/plots/{column}-data.pkl')  
     st.write(df)
+
+    mean_max = df['MeanScore'].iloc[0]
+    mean_min = df['MeanScore'].iloc[-1]
+    spread = mean_max - mean_min
+    spread_rounded = round(spread, 2)
+    st.info(f'**Mean Range: {spread_rounded}**')
 
     analysis = load_text(f'{column}-analysis.txt')
     if analysis:
@@ -74,42 +83,3 @@ def page_4_body():
     #     " has a significant influence on the overall score of a student."
     # )
 
-    # render_column_data('ParentEduc')
-    # st.info(
-    #     "Analysis"
-    # )
-
-    # render_column_data('LunchType')
-    # st.info(
-    #     "Analysis"
-    # )
-
-    # render_column_data('TestPrep')
-    # st.info(
-    #     "Analysis"
-    # )
-
-    # render_column_data('ParentMaritalStatus')
-    # st.info(
-    #     "Analysis"
-    # )
-
-    # render_column_data('PracticeSport')
-    # st.info(
-    #     "Analysis"
-    # )
-
-    # render_column_data('IsFirstChild')
-    # st.info(
-    #     "Analysis"
-    # )
-
-    # render_column_data('NrSiblings')
-    # st.info(
-    #     "Analysis"
-    # )
-
-    # render_column_data('TransportMeans')
-    # st.info(
-    #     "Analysis"
-    # )
