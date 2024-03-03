@@ -1,6 +1,6 @@
 import streamlit as st
 import matplotlib.pyplot as plt
-from src.data_management import load_image, load_pkl_file
+from src.data_management import load_image, load_pkl_file, load_text
 
 
 # set global width for all pictures
@@ -25,7 +25,10 @@ def render_column_data(column):
 
     st.write(f"## Exam results based on {column}")
     df = load_pkl_file(f'outputs/images/plots/{column}-data.pkl')  
-    st.write(df)  
+    st.write(df)
+
+    analysis = load_text(f'{column}-analysis.txt')
+    st.info(analysis)
 
 
 def page_4_body():
@@ -61,72 +64,42 @@ def page_4_body():
         " has a significant influence on the overall score of a student."
     )
 
-    st.write("### PARENTAL EDUCATION\n")
-    st.image(
-        load_image("analysis-parenteduc"),
-        caption='caption',
-        width=WIDTH,
-        )
+    render_column_data('ParentEduc')
     st.info(
         "Analysis"
     )
 
-    st.write("### LUNCH TYPE\n")
-    st.image(
-        load_image("analysis-lunchtype"),
-        caption='caption',
-        width=WIDTH,
-        )
+    render_column_data('LunchType')
     st.info(
         "Analysis"
     )
 
-    st.write("### TEST PREPARATION\n")
-    st.image(
-        load_image("analysis-testprep"),
-        caption='caption',
-        width=WIDTH,
-        )
+    render_column_data('TestPrep')
     st.info(
         "Analysis"
     )
 
-    st.write("### PARENT MARITAL STATUS\n")
-    st.image(
-        load_image("analysis-marriage"),
-        caption='caption',
-        width=WIDTH,
-        )
+    render_column_data('ParentMaritalStatus')
     st.info(
         "Analysis"
     )
 
-    st.write("### PRACTICE SPORT\n")
-    st.image(
-        load_image("analysis-sport"),
-        caption='caption',
-        width=WIDTH,
-        )
+    render_column_data('PracticeSport')
     st.info(
         "Analysis"
     )
 
-    st.write("### FIRST CHILD\n")
-    st.image(
-        load_image("analysis-firstChild"),
-        caption='caption',
-        width=WIDTH,
-        )
+    render_column_data('IsFirstChild')
     st.info(
         "Analysis"
     )
 
-    st.write("### NUMBER OF SIBLINGS\n")
-    st.image(
-        load_image("analysis-siblings"),
-        caption='caption',
-        width=WIDTH,
-        )
+    render_column_data('NrSiblings')
+    st.info(
+        "Analysis"
+    )
+
+    render_column_data('TransportMeans')
     st.info(
         "Analysis"
     )
