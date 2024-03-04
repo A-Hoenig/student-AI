@@ -7,11 +7,9 @@ from src.ml.prediction_engine import (
 
 
 def page_5_body():
-    
     st.write("## Prediction Report")
 
-    csv_file = st.file_uploader(
-        "Upload CSV file student list", type=['csv'])
+    csv_file = st.file_uploader("Upload CSV file student list", type=['csv'])
     
     if csv_file is not None:
         csv_file.seek(0)
@@ -20,16 +18,14 @@ def page_5_body():
         # Check for missing values
         if df.isnull().values.any():
             st.error('The uploaded CSV file contains missing values.\n'
-            'Please correct them and upload the file again.')
+                     'Please correct them and upload the file again.')
             return 
         
         subjects = ['math', 'reading', 'writing']
 
-        # Process file
-     
         for subject in subjects:
             st.write(f"## {subject.capitalize()} Report")
-            csv_file.seek(0)
+            csv_file.seek(0)  # Reset the file pointer to the beginning
             report_df = batch_process_scores(csv_file, subject)
             
             # Display dynamic filter labels
@@ -38,12 +34,31 @@ def page_5_body():
                 f"Filter options for {subject.capitalize()}:",
                 options=unique_labels, default=unique_labels)
             
-            # Filter dataframe
+            # Filter dataframe based on selected labels
             filtered_df = report_df[
                 report_df[f'{subject} Prediction'].isin(selected_labels)]
             
-            st.dataframe(filtered_df)
+            # Use 2 columns
+            col1, col2 = st.beta_columns(2)
 
+            # sort by column
+            with col1:
+                sort_column = st.radio(
+                    "Sort By",
+                    options=filtered_df.columns.tolist(),
+                    key=f'sort_column_{subject}'
+                )
+            # Ascending or descending
+            with col2:
+                sort_order = st.radio(
+                    "Order",
+                    ["Ascending", "Descending"],
+                    key=f'sort_order_{subject}'
+                ) == "Ascending"
+            # Apply sort
+            sorted_df = filtered_df.sort_values(by=sort_column, ascending=sort_order)
+            # Display sorted dataframe
+            st.dataframe(sorted_df)
 
 
 def batch_process_scores(csv_file_path, score_type):

@@ -8,8 +8,8 @@ from pandas.plotting import table
 
 IMAGE_PATH = "outputs/images/plots/"
 PLOT_PATH = "outputs/plots/"
-DF_PATH = "outputs/df/"
-TXT_PATH = "outputs/txt/"
+DF_PATH = "outputs/dataframes/"
+TXT_PATH = "outputs/test/"
 
 
 @st.cache(suppress_st_warning=True, allow_output_mutation=True)
