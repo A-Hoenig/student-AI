@@ -29,6 +29,29 @@ def page_4_body():
 
     render_column_data(selected_column)
 
+    st.write(
+        "## Assessing the Numerical Variables (Scores)"
+    )
+    st.image(
+        load_plot("Numerical-distribution"),
+        caption=f'Distribution plots of the Score Values',
+        use_column_width= 'auto',
+        )
+    st.image(
+        load_plot("Numerical-boxplots"),
+        caption=f'Boxplots visualizing the standard deviation and outliers',
+        use_column_width= 'auto',
+        )
+    st.image(
+        load_plot("Numerical-kde"),
+        caption=f'Kernel Density Estimation - Data density',
+        use_column_width= 'auto',
+        )
+    st.image(
+        load_plot("Numerical-qq"),
+        caption=f'QQ Plots show how the data is distributed.',
+        use_column_width= 'auto',
+        )
 
     st.write('---')
     st.write('# Variable Relationships to Scores')
