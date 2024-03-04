@@ -30,6 +30,30 @@ def page_4_body():
     render_column_data(selected_column)
 
 
+    st.write('---')
+    st.write('# Variable Relationships to Scores')
+    
+    def display_parallel_plot(plot_type):
+        # Load and display the selected parallel plot
+        with open(f'outputs/images/plots/parallel_plot_{plot_type}.html', 'r') as f:
+            html_content = f.read()
+        st.components.v1.html(html_content, height=400)
+
+    # radio buttons for selecting the plot type
+    selected_plot = st.radio("Select plot:", ['maths', 'reading', 'writing'])
+
+    # Display the selected parallel plot
+    display_parallel_plot(selected_plot)
+
+    st.info(
+        """These plots are interactive. You can drag the order of the 
+        variables. The scores have been combined into 5 'bins' ranging from 
+        Failed to Exceptional. You can trace the path of each student through
+        each data feature to see where they place in the score ranking.
+        
+        """)
+   
+
 def render_column_data(column):
 
     # Display analysis for each variable/column

@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import joblib
 from PIL import Image
+from pandas.plotting import table
 
 IMAGE_PATH = "outputs/images/plots/"
 
@@ -55,3 +56,51 @@ def load_text(filename):
             return file.read()
     except FileNotFoundError:
         return None
+
+
+def save_plot(figure, filename, directory='outputs/images/plots'):
+    # Create directory if it doesn't exist
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+    # Define the full path
+    filepath = os.path.join(directory, filename)
+
+    # If a file with the same name already exists, remove it
+    if os.path.isfile(filepath):
+        os.remove(filepath)
+
+    # Save the figure
+    figure.savefig(filepath, bbox_inches='tight')
+
+def save_df(df, filename, directory='outputs/images/plots'):
+    # Create directory if it doesn't exist
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+    # Define the full path
+    filepath = os.path.join(directory, filename)
+
+    # If a file with the same name already exists, remove it
+    if os.path.isfile(filepath):
+        os.remove(filepath)
+
+    # Save the DataFrame using pickle
+    with open(filepath, 'wb') as file:
+        pickle.dump(df, file)
+
+def save_analysis(text, filename, directory='outputs/images/plots'):
+    # Create directory if it doesn't exist
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    
+    # Define the full path
+    filepath = os.path.join(directory, filename)
+    
+    # If a file with the same name already exists, remove it
+    if os.path.isfile(filepath):
+        os.remove(filepath)
+    
+    # Save the text
+    with open(filepath, 'w') as file:
+        file.write(text)
