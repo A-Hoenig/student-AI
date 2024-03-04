@@ -76,15 +76,15 @@ def AcquireInputs():
 
     with column1:
         feature = 'EthnicGroup'
-        streamlit_widget = st.selectbox(
+        streamlit_widget = st.radio(
             label=feature,
-            options=df[feature].unique()
+            options=sorted(df[feature].unique())
         )
     input_features[feature] = streamlit_widget
 
     with column2:
         feature = 'ParentEduc'
-        streamlit_widget = st.selectbox(
+        streamlit_widget = st.radio(
             label=feature,
             options=df[feature].unique()
         )
@@ -92,7 +92,7 @@ def AcquireInputs():
 
     with column3:
         feature = 'LunchType'
-        streamlit_widget = st.selectbox(
+        streamlit_widget = st.radio(
             label=feature,
             options=df[feature].unique()
         )
