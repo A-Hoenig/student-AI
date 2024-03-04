@@ -15,23 +15,25 @@ def page_3_body():
         " Columns. Scanning through, you can see some cells containing"
         " <NA> which stands for not available. This is where the data import"
         " found a blank cell. The unnamed column is also redundant and will "
-        "be removed in a later step. We can summarize the empty cells with a "
-        "function:\n"
-    )
-    
-    df = load_pkl_file(f'outputs/dataframes/dataset_missing_values.pkl')  
-    st.write(df)
-
-    st.info(
-        "Those are many rows with missing data. Especially the transport"
-        " means has 10.2% missing information. If we elimintate all rows"
-        " with missing information we end up with 19243 remaining rows:"
+        "be removed in a later step." 
     )
 
     unique_values = load_text(f'dataset_unique_values.txt')
     if unique_values:
         st.markdown(f"\n{unique_values}\n", unsafe_allow_html=True)
 
+    st.write(
+        "## We can summarize the empty cells with a function:\n"
+    )
+
+    df = load_pkl_file(f'outputs/dataframes/dataset_missing_values.pkl')  
+    st.write(df)
+
+    st.info(
+        "There are many rows with missing data. Especially the transport"
+        " means has 10.2% missing information. If we elimintate all rows"
+        " with missing information we end up with 19243 remaining rows:"
+    )
 
     st.image(
         load_image("dropped_rows"),
