@@ -1,301 +1,301 @@
 ,Gender,EthnicGroup,ParentEduc,LunchType,TestPrep,ParentMaritalStatus,PracticeSport,IsFirstChild,NrSiblings,TransportMeans,WklyStudyHours,MathScore,ReadingScore,WritingScore
-4342,male,group D,some college,free/reduced,none,single,sometimes,yes,3.0,school_bus,5 - 10,70,74,68
-17779,male,group C,high school,standard,none,married,regularly,yes,2.0,private,5 - 10,85,88,78
-17854,female,group B,some high school,standard,completed,married,regularly,yes,6.0,school_bus,< 5,82,89,96
-6645,male,group D,some high school,standard,none,divorced,never,yes,3.0,school_bus,5 - 10,45,44,37
-13283,female,group D,some college,free/reduced,none,married,regularly,yes,0.0,school_bus,5 - 10,63,81,78
-7456,male,group D,high school,free/reduced,none,single,sometimes,yes,6.0,private,> 10,48,39,35
-27693,male,group D,some high school,standard,none,married,regularly,no,2.0,school_bus,< 5,65,64,54
-1726,female,group B,some college,free/reduced,none,single,regularly,yes,5.0,private,5 - 10,46,53,53
-16925,female,group D,associate's degree,standard,none,married,regularly,no,2.0,school_bus,5 - 10,77,74,78
-26117,female,group B,some high school,free/reduced,completed,divorced,never,yes,0.0,private,5 - 10,77,85,85
-25289,male,group D,some high school,standard,completed,divorced,sometimes,no,1.0,private,5 - 10,78,79,80
-4910,female,group B,some high school,free/reduced,none,married,sometimes,no,3.0,school_bus,> 10,55,71,61
-4152,female,group D,associate's degree,standard,completed,married,regularly,yes,1.0,school_bus,5 - 10,77,81,83
-18839,male,group B,master's degree,standard,none,married,sometimes,yes,3.0,private,< 5,67,60,66
-2581,male,group E,some high school,standard,none,married,regularly,no,2.0,private,> 10,80,71,64
-12580,female,group B,bachelor's degree,standard,completed,married,regularly,no,7.0,school_bus,< 5,87,92,100
-988,male,group D,bachelor's degree,standard,none,divorced,sometimes,yes,4.0,school_bus,5 - 10,74,66,72
-232,female,group B,high school,standard,completed,single,sometimes,yes,1.0,private,5 - 10,58,70,68
-9227,female,group D,some high school,free/reduced,completed,married,sometimes,yes,1.0,private,5 - 10,54,64,67
-30348,female,group C,high school,standard,completed,divorced,regularly,no,2.0,school_bus,< 5,57,71,73
-26999,male,group B,some college,standard,none,single,sometimes,yes,1.0,school_bus,< 5,64,52,54
-15672,female,group B,associate's degree,free/reduced,none,divorced,sometimes,no,5.0,private,5 - 10,54,66,62
-20177,male,group A,bachelor's degree,free/reduced,none,married,never,no,2.0,private,5 - 10,60,55,58
-24687,female,group B,some high school,standard,none,single,regularly,yes,3.0,school_bus,5 - 10,79,83,80
-16877,female,group A,bachelor's degree,free/reduced,completed,married,regularly,yes,3.0,school_bus,5 - 10,51,63,67
-17035,male,group E,associate's degree,free/reduced,none,married,regularly,yes,3.0,school_bus,< 5,59,59,55
-12366,female,group C,high school,standard,completed,married,regularly,yes,0.0,school_bus,< 5,64,65,69
-28547,female,group B,bachelor's degree,standard,none,married,sometimes,no,2.0,private,5 - 10,69,70,74
-22583,female,group D,some college,standard,completed,married,regularly,yes,1.0,private,5 - 10,65,74,76
-13410,male,group E,high school,standard,completed,divorced,regularly,yes,1.0,school_bus,< 5,71,59,55
-3910,male,group C,some high school,free/reduced,none,married,sometimes,yes,3.0,private,< 5,56,58,47
-17889,female,group C,master's degree,standard,none,married,regularly,yes,3.0,private,5 - 10,73,88,89
-22384,male,group B,high school,standard,completed,married,regularly,yes,1.0,school_bus,< 5,63,69,71
-20152,male,group C,master's degree,standard,completed,widowed,sometimes,yes,1.0,private,5 - 10,83,84,84
-16649,female,group C,associate's degree,standard,none,divorced,sometimes,no,2.0,private,5 - 10,42,54,54
-15194,male,group B,bachelor's degree,standard,completed,married,sometimes,yes,3.0,school_bus,5 - 10,91,86,87
-14745,male,group B,associate's degree,standard,none,single,sometimes,no,2.0,private,5 - 10,81,77,72
-5118,female,group B,some college,free/reduced,none,married,sometimes,yes,0.0,school_bus,5 - 10,44,49,53
-4370,male,group D,high school,standard,completed,single,sometimes,yes,1.0,private,5 - 10,71,71,66
-13997,female,group A,some college,free/reduced,none,married,sometimes,yes,1.0,school_bus,5 - 10,52,71,68
-602,male,group A,high school,standard,none,married,sometimes,yes,0.0,school_bus,5 - 10,71,74,64
-11260,female,group C,some college,standard,completed,married,sometimes,no,3.0,private,5 - 10,79,86,84
-8092,male,group D,high school,free/reduced,none,married,sometimes,yes,1.0,private,5 - 10,74,68,61
-10336,female,group E,some high school,standard,completed,married,sometimes,yes,2.0,school_bus,5 - 10,96,91,94
-20990,male,group C,master's degree,standard,none,married,sometimes,yes,3.0,school_bus,5 - 10,85,83,78
-27634,male,group B,some high school,standard,completed,divorced,regularly,no,3.0,school_bus,< 5,81,61,64
-18511,female,group C,some high school,standard,completed,married,regularly,no,2.0,school_bus,> 10,65,78,76
-10635,male,group C,some high school,standard,completed,married,regularly,yes,0.0,school_bus,5 - 10,70,75,82
-21289,female,group A,associate's degree,standard,completed,single,regularly,yes,1.0,school_bus,< 5,59,74,71
-1461,female,group C,some high school,standard,none,single,sometimes,yes,3.0,private,5 - 10,52,62,60
-14589,female,group E,some college,standard,none,married,regularly,no,3.0,private,> 10,79,71,77
-3670,male,group C,high school,standard,none,married,sometimes,yes,1.0,private,< 5,55,49,39
-7611,female,group C,bachelor's degree,standard,none,married,sometimes,no,1.0,school_bus,5 - 10,54,58,57
-24273,male,group D,some college,standard,completed,single,regularly,no,1.0,private,5 - 10,69,69,67
-14575,male,group B,associate's degree,standard,none,single,sometimes,yes,2.0,private,5 - 10,69,57,59
-23575,female,group D,bachelor's degree,standard,none,single,regularly,yes,0.0,school_bus,> 10,50,57,58
-9494,male,group D,associate's degree,standard,completed,married,regularly,yes,3.0,private,5 - 10,83,74,80
-23027,male,group D,some college,standard,completed,divorced,never,yes,2.0,school_bus,5 - 10,96,91,91
-12481,female,group D,associate's degree,free/reduced,none,married,sometimes,yes,2.0,private,> 10,63,68,70
-320,female,group D,some high school,free/reduced,completed,married,sometimes,yes,3.0,school_bus,5 - 10,35,55,60
-14023,female,group B,some college,free/reduced,none,single,never,no,1.0,private,< 5,47,59,56
-2436,female,group C,some college,standard,none,married,never,yes,3.0,school_bus,5 - 10,55,65,65
-8770,female,group E,high school,standard,completed,married,sometimes,yes,2.0,private,5 - 10,93,98,94
-26221,female,group B,high school,free/reduced,none,married,sometimes,yes,2.0,school_bus,> 10,39,66,54
-20502,female,group E,high school,standard,none,single,regularly,yes,0.0,school_bus,5 - 10,70,70,73
-18877,male,group C,high school,free/reduced,none,married,sometimes,no,3.0,school_bus,5 - 10,74,77,68
-23616,male,group C,some college,free/reduced,completed,married,regularly,yes,1.0,private,5 - 10,52,60,61
-29547,male,group B,high school,free/reduced,completed,married,never,no,2.0,private,5 - 10,49,50,53
-25438,female,group D,bachelor's degree,standard,none,divorced,regularly,yes,2.0,private,5 - 10,76,91,92
-18264,male,group C,some college,standard,none,single,sometimes,yes,4.0,private,< 5,66,58,58
-6878,female,group D,bachelor's degree,standard,none,single,sometimes,no,3.0,school_bus,> 10,82,74,85
-25811,female,group C,master's degree,standard,completed,married,regularly,yes,4.0,school_bus,5 - 10,66,80,75
-10276,female,group C,some high school,standard,completed,single,regularly,yes,2.0,school_bus,< 5,71,84,86
-23746,female,group D,some high school,standard,none,married,never,no,2.0,school_bus,5 - 10,68,74,75
-29151,male,group D,associate's degree,free/reduced,completed,married,sometimes,no,3.0,school_bus,5 - 10,50,53,52
-1923,female,group C,some college,standard,none,single,regularly,yes,3.0,private,< 5,54,68,64
-15469,female,group D,high school,standard,completed,married,sometimes,yes,1.0,private,< 5,76,78,79
-25350,male,group D,some college,standard,completed,married,regularly,yes,1.0,school_bus,5 - 10,66,61,67
-11451,female,group C,bachelor's degree,standard,none,married,never,yes,2.0,private,5 - 10,60,77,66
-8072,male,group D,associate's degree,free/reduced,none,divorced,sometimes,yes,0.0,school_bus,> 10,73,64,67
-3899,male,group C,associate's degree,standard,none,single,sometimes,yes,2.0,school_bus,5 - 10,84,74,71
-9742,female,group C,associate's degree,free/reduced,completed,married,regularly,yes,0.0,school_bus,5 - 10,54,76,74
-7035,male,group E,some high school,free/reduced,none,married,sometimes,yes,3.0,private,< 5,87,84,76
-17407,female,group D,some college,standard,none,married,sometimes,yes,4.0,school_bus,5 - 10,62,79,76
-25051,female,group E,some high school,standard,none,married,sometimes,yes,4.0,private,5 - 10,65,77,69
-20648,female,group D,high school,standard,none,married,never,yes,2.0,school_bus,5 - 10,43,56,54
-27247,female,group C,associate's degree,standard,none,married,never,no,2.0,school_bus,5 - 10,77,91,90
-22638,male,group B,some high school,standard,completed,married,never,yes,2.0,school_bus,5 - 10,50,48,41
-18438,female,group C,master's degree,free/reduced,none,married,sometimes,no,4.0,private,> 10,64,83,83
-6243,male,group B,associate's degree,standard,none,single,sometimes,yes,2.0,school_bus,> 10,93,87,78
-21836,female,group C,master's degree,standard,none,married,sometimes,yes,1.0,school_bus,< 5,63,66,64
-28167,female,group E,high school,standard,completed,married,sometimes,yes,3.0,school_bus,< 5,97,95,98
-13723,male,group B,some college,free/reduced,none,married,never,yes,2.0,private,5 - 10,65,75,63
-19143,female,group D,associate's degree,standard,completed,divorced,sometimes,yes,3.0,school_bus,< 5,73,85,82
-25161,female,group E,bachelor's degree,standard,none,married,regularly,no,4.0,school_bus,5 - 10,92,100,98
-17955,female,group D,associate's degree,free/reduced,none,married,never,no,1.0,private,< 5,58,76,69
-15597,female,group E,bachelor's degree,standard,completed,divorced,sometimes,yes,0.0,private,5 - 10,100,91,95
-3227,male,group B,some college,free/reduced,completed,single,never,yes,0.0,school_bus,< 5,51,48,48
-14946,male,group D,some college,standard,none,divorced,sometimes,yes,3.0,school_bus,5 - 10,67,65,64
-4385,female,group C,some high school,free/reduced,none,divorced,regularly,yes,1.0,private,5 - 10,45,56,51
-17291,female,group D,some high school,standard,none,married,sometimes,no,2.0,private,5 - 10,58,55,56
-15924,female,group C,some high school,standard,completed,married,sometimes,no,1.0,private,< 5,62,80,74
-30558,male,group B,associate's degree,standard,none,single,regularly,no,1.0,private,> 10,94,83,77
-21790,male,group D,some college,free/reduced,none,single,sometimes,yes,2.0,private,5 - 10,64,68,66
-1514,male,group D,high school,standard,none,single,never,no,1.0,school_bus,> 10,66,55,57
-19920,male,group E,master's degree,free/reduced,completed,married,sometimes,no,3.0,private,< 5,95,89,95
-29387,male,group A,high school,standard,none,married,regularly,no,1.0,school_bus,5 - 10,80,70,60
-5978,male,group B,associate's degree,standard,none,single,sometimes,yes,1.0,school_bus,> 10,59,50,53
-7353,female,group D,some high school,standard,none,married,regularly,yes,4.0,private,5 - 10,65,71,75
-4523,female,group E,some high school,standard,none,divorced,sometimes,no,1.0,school_bus,5 - 10,67,68,64
-14101,male,group C,bachelor's degree,standard,none,divorced,sometimes,no,2.0,school_bus,< 5,71,69,65
-11764,male,group C,high school,free/reduced,none,married,sometimes,yes,4.0,private,5 - 10,50,43,47
-18414,female,group C,master's degree,standard,completed,married,regularly,no,2.0,private,5 - 10,60,68,73
-15100,female,group E,some college,standard,completed,single,never,yes,4.0,school_bus,5 - 10,70,74,77
-24951,male,group D,some college,standard,none,married,regularly,no,5.0,private,> 10,98,95,92
-19669,male,group D,high school,free/reduced,none,married,sometimes,yes,1.0,private,< 5,50,52,45
-29785,male,group D,associate's degree,standard,completed,divorced,sometimes,no,1.0,school_bus,5 - 10,63,67,66
-28130,female,group B,bachelor's degree,standard,none,married,sometimes,yes,0.0,private,5 - 10,84,93,93
-15814,female,group C,bachelor's degree,standard,completed,single,regularly,no,2.0,school_bus,< 5,69,81,88
-27187,male,group C,master's degree,standard,none,divorced,never,yes,2.0,school_bus,< 5,78,65,68
-28235,female,group C,some college,standard,none,single,never,no,3.0,school_bus,< 5,27,31,31
-17412,male,group D,associate's degree,standard,none,divorced,sometimes,yes,5.0,school_bus,5 - 10,89,78,77
-22696,female,group B,some high school,standard,none,married,regularly,yes,2.0,private,> 10,61,61,61
-10832,male,group C,associate's degree,free/reduced,none,married,sometimes,yes,2.0,private,< 5,44,42,38
-11006,female,group C,high school,free/reduced,none,single,sometimes,no,2.0,school_bus,> 10,59,65,63
-10151,male,group D,some high school,standard,completed,divorced,regularly,yes,3.0,private,5 - 10,57,51,59
-17842,male,group E,master's degree,standard,none,divorced,sometimes,no,2.0,private,> 10,82,74,76
-29767,male,group C,high school,standard,none,married,regularly,no,2.0,school_bus,5 - 10,64,63,59
-11328,male,group C,associate's degree,standard,none,divorced,sometimes,no,3.0,private,< 5,75,78,72
-7514,female,group A,high school,standard,none,married,sometimes,yes,3.0,school_bus,> 10,74,81,77
-22289,male,group B,some college,standard,completed,married,sometimes,yes,1.0,private,5 - 10,86,74,76
-16392,male,group D,associate's degree,free/reduced,none,single,regularly,no,4.0,private,> 10,53,48,52
-879,male,group E,associate's degree,free/reduced,completed,married,sometimes,yes,0.0,school_bus,5 - 10,46,43,44
-10090,male,group B,some college,standard,none,single,regularly,no,3.0,private,5 - 10,61,57,57
-26476,male,group C,some college,standard,completed,single,sometimes,yes,1.0,school_bus,5 - 10,73,74,80
-24379,female,group A,some high school,standard,none,single,regularly,yes,1.0,private,5 - 10,44,49,49
-10222,male,group C,master's degree,free/reduced,completed,single,sometimes,no,1.0,school_bus,> 10,47,50,53
-13824,female,group B,associate's degree,standard,completed,single,sometimes,yes,5.0,school_bus,< 5,71,83,88
-9562,male,group E,some college,standard,none,married,never,yes,2.0,school_bus,5 - 10,77,65,63
-2215,female,group D,some college,standard,none,married,sometimes,yes,1.0,school_bus,5 - 10,89,92,92
-12505,male,group D,associate's degree,free/reduced,completed,married,regularly,yes,2.0,private,> 10,76,71,70
-14904,male,group D,bachelor's degree,standard,none,married,sometimes,yes,2.0,private,5 - 10,73,72,71
-13133,male,group D,associate's degree,standard,completed,divorced,regularly,no,5.0,private,> 10,81,69,74
-23296,male,group C,some college,free/reduced,none,married,regularly,yes,2.0,school_bus,< 5,56,53,52
-1484,male,group B,some high school,free/reduced,none,single,sometimes,yes,1.0,private,> 10,30,21,17
-29094,female,group C,associate's degree,standard,none,single,never,no,1.0,private,5 - 10,64,75,71
-1505,male,group D,master's degree,free/reduced,none,married,regularly,yes,1.0,school_bus,5 - 10,70,66,62
-21265,female,group D,master's degree,standard,none,single,regularly,yes,2.0,private,< 5,73,92,94
-27418,female,group B,associate's degree,free/reduced,none,single,regularly,yes,0.0,private,5 - 10,65,76,77
-5046,male,group D,associate's degree,free/reduced,none,single,sometimes,yes,2.0,school_bus,5 - 10,83,79,84
-1658,female,group E,some college,free/reduced,none,married,sometimes,yes,2.0,private,> 10,66,71,70
-26525,male,group B,some high school,standard,none,married,regularly,yes,1.0,school_bus,5 - 10,81,75,74
-14447,male,group D,high school,standard,none,married,sometimes,no,5.0,private,5 - 10,90,79,71
-23049,male,group E,some college,standard,none,married,sometimes,yes,1.0,school_bus,> 10,63,55,43
-11853,male,group A,some college,free/reduced,completed,married,sometimes,yes,1.0,private,5 - 10,49,59,53
-8759,female,group B,associate's degree,free/reduced,completed,married,sometimes,yes,0.0,school_bus,< 5,31,50,48
-9655,male,group A,associate's degree,standard,none,divorced,never,yes,0.0,private,5 - 10,85,79,70
-29781,male,group E,some high school,standard,completed,married,sometimes,no,1.0,private,5 - 10,93,90,83
-8891,female,group C,associate's degree,standard,none,married,sometimes,yes,1.0,school_bus,5 - 10,70,75,77
-26523,female,group C,bachelor's degree,free/reduced,completed,married,never,no,3.0,school_bus,5 - 10,70,77,80
-2903,female,group D,master's degree,standard,completed,divorced,sometimes,yes,2.0,private,5 - 10,81,96,100
-29859,female,group A,high school,free/reduced,none,married,regularly,no,4.0,school_bus,5 - 10,51,65,58
-13973,male,group C,some high school,free/reduced,completed,single,sometimes,yes,1.0,private,< 5,44,52,47
-30008,female,group B,high school,standard,none,married,sometimes,no,3.0,private,5 - 10,58,72,65
-11298,female,group D,some high school,standard,completed,single,sometimes,yes,2.0,school_bus,5 - 10,71,78,83
-2332,female,group B,some high school,standard,completed,single,sometimes,yes,3.0,school_bus,5 - 10,54,72,77
-10389,female,group A,bachelor's degree,free/reduced,completed,divorced,sometimes,yes,5.0,private,< 5,52,76,77
-1283,female,group D,high school,free/reduced,none,married,regularly,yes,2.0,school_bus,< 5,70,81,85
-5625,female,group B,some high school,standard,completed,married,regularly,yes,3.0,school_bus,5 - 10,82,93,93
-19852,female,group D,some college,standard,none,divorced,sometimes,yes,4.0,private,> 10,59,73,74
-12902,female,group E,high school,standard,completed,married,sometimes,no,2.0,private,5 - 10,74,76,83
-5745,female,group A,bachelor's degree,standard,none,divorced,sometimes,yes,1.0,private,< 5,62,55,66
-12590,female,group C,some high school,standard,none,single,sometimes,yes,2.0,school_bus,5 - 10,62,63,66
-5827,female,group B,high school,standard,none,married,regularly,yes,0.0,school_bus,5 - 10,48,59,61
-11015,female,group D,high school,standard,completed,widowed,sometimes,yes,4.0,school_bus,5 - 10,95,100,100
-17603,male,group D,some college,standard,none,married,regularly,yes,2.0,school_bus,5 - 10,62,71,69
-14196,male,group D,some college,standard,none,married,regularly,yes,2.0,school_bus,5 - 10,72,63,68
-27714,male,group B,some college,free/reduced,none,married,never,yes,2.0,school_bus,5 - 10,43,41,37
-19321,female,group B,high school,standard,none,single,regularly,yes,1.0,school_bus,5 - 10,33,49,49
-3490,female,group D,associate's degree,free/reduced,none,married,sometimes,yes,5.0,private,5 - 10,67,82,76
-11763,male,group B,some high school,standard,none,married,never,yes,4.0,private,< 5,61,53,44
-17036,male,group B,high school,free/reduced,none,divorced,regularly,no,3.0,school_bus,5 - 10,51,53,50
-21937,female,group E,some high school,standard,none,married,regularly,yes,5.0,private,5 - 10,60,73,68
-18472,male,group B,high school,standard,completed,married,regularly,no,1.0,school_bus,< 5,87,86,88
-28254,female,group D,some college,free/reduced,none,married,sometimes,no,1.0,school_bus,5 - 10,55,69,70
-15932,female,group D,some high school,standard,none,married,regularly,yes,2.0,school_bus,< 5,70,78,74
-19932,female,group B,some college,free/reduced,none,single,regularly,yes,4.0,private,5 - 10,52,65,63
-15560,male,group B,bachelor's degree,standard,none,married,sometimes,yes,3.0,school_bus,5 - 10,75,68,67
-11361,female,group D,associate's degree,standard,none,married,sometimes,yes,2.0,private,5 - 10,68,64,72
-11255,female,group E,some college,standard,none,married,sometimes,no,2.0,private,< 5,52,66,63
-5695,female,group B,some college,standard,none,married,sometimes,yes,1.0,private,< 5,56,59,56
-22366,male,group C,associate's degree,free/reduced,completed,divorced,sometimes,yes,2.0,school_bus,< 5,69,70,68
-12988,male,group A,some college,standard,none,married,sometimes,no,2.0,private,> 10,58,57,53
-652,male,group A,high school,free/reduced,none,divorced,sometimes,yes,2.0,school_bus,5 - 10,53,58,44
-28777,male,group C,associate's degree,free/reduced,none,married,sometimes,yes,2.0,school_bus,5 - 10,48,45,46
-13926,male,group D,some college,standard,completed,married,sometimes,no,3.0,school_bus,5 - 10,82,81,88
-16948,male,group C,some high school,standard,completed,divorced,sometimes,yes,3.0,school_bus,5 - 10,82,86,81
-28099,male,group C,high school,standard,none,married,never,no,1.0,school_bus,5 - 10,65,62,58
-28270,female,group D,some high school,standard,none,married,sometimes,yes,3.0,private,5 - 10,62,75,76
-6941,female,group B,associate's degree,standard,none,single,sometimes,no,3.0,private,< 5,53,57,63
-9938,female,group B,associate's degree,free/reduced,completed,divorced,never,yes,1.0,school_bus,> 10,59,76,73
-20604,male,group C,some high school,standard,completed,married,regularly,no,1.0,private,> 10,51,60,55
+2568,male,group A,some college,standard,none,married,regularly,yes,3.0,private,5 - 10,62,55,55
+3594,female,group B,high school,free/reduced,none,married,regularly,no,3.0,school_bus,5 - 10,54,58,55
+4749,female,group D,associate's degree,standard,none,married,sometimes,yes,0.0,school_bus,< 5,64,73,70
+26170,male,group A,bachelor's degree,standard,none,married,regularly,yes,2.0,school_bus,5 - 10,85,82,71
+30186,female,group B,high school,standard,none,married,regularly,no,2.0,private,< 5,62,60,59
+6818,male,group E,high school,free/reduced,none,married,sometimes,no,1.0,school_bus,> 10,71,72,63
+13125,male,group A,bachelor's degree,standard,none,divorced,regularly,yes,2.0,school_bus,< 5,69,58,55
+7665,male,group C,bachelor's degree,standard,completed,married,sometimes,yes,0.0,private,> 10,67,60,58
+24552,male,group D,some high school,standard,completed,married,regularly,yes,2.0,private,> 10,86,76,74
+2312,female,group D,bachelor's degree,standard,none,married,sometimes,yes,1.0,school_bus,5 - 10,73,74,74
+12035,male,group E,high school,standard,none,married,regularly,yes,2.0,private,5 - 10,77,64,57
+8619,male,group C,some college,standard,none,single,regularly,yes,1.0,private,< 5,34,41,41
+15590,male,group D,associate's degree,standard,completed,married,sometimes,no,5.0,private,5 - 10,99,100,90
+6097,female,group E,high school,free/reduced,none,divorced,regularly,yes,0.0,school_bus,> 10,72,84,84
+26690,female,group D,some high school,free/reduced,none,divorced,sometimes,no,2.0,private,5 - 10,61,70,66
+14143,male,group D,high school,free/reduced,completed,single,sometimes,no,3.0,school_bus,< 5,58,65,60
+12492,female,group E,some college,standard,none,single,sometimes,yes,5.0,private,5 - 10,79,82,85
+14002,male,group D,high school,free/reduced,none,single,sometimes,no,2.0,school_bus,5 - 10,63,65,61
+22869,male,group E,some college,free/reduced,none,single,regularly,yes,6.0,private,5 - 10,58,48,47
+17727,female,group C,bachelor's degree,standard,none,divorced,sometimes,no,3.0,school_bus,5 - 10,72,85,86
+4758,male,group B,some college,standard,completed,single,sometimes,no,4.0,school_bus,< 5,97,93,89
+25944,female,group D,high school,standard,completed,single,regularly,no,1.0,private,5 - 10,48,53,56
+13193,male,group B,some college,standard,none,married,never,yes,1.0,school_bus,5 - 10,72,65,62
+11725,male,group B,some college,standard,none,widowed,sometimes,yes,5.0,school_bus,< 5,65,55,50
+85,male,group C,associate's degree,free/reduced,completed,married,regularly,no,3.0,private,> 10,45,46,52
+25994,male,group D,some high school,free/reduced,completed,married,regularly,yes,2.0,school_bus,< 5,55,62,68
 9688,male,group E,associate's degree,standard,none,single,never,yes,2.0,school_bus,> 10,86,72,72
-16501,female,group D,some college,standard,none,married,never,yes,4.0,school_bus,> 10,69,84,79
-7969,female,group B,bachelor's degree,free/reduced,none,divorced,sometimes,yes,2.0,private,> 10,62,76,71
-4579,male,group B,high school,standard,none,married,never,yes,3.0,school_bus,5 - 10,83,77,77
-2434,male,group C,some college,standard,none,married,regularly,no,4.0,school_bus,5 - 10,73,70,67
-23772,male,group B,some high school,standard,completed,married,regularly,yes,2.0,school_bus,> 10,44,58,59
-5409,male,group C,some college,standard,none,single,never,yes,2.0,school_bus,< 5,61,56,57
-28302,male,group A,some college,standard,none,married,regularly,no,3.0,private,> 10,81,65,62
-24711,female,group C,high school,free/reduced,none,divorced,regularly,yes,2.0,school_bus,5 - 10,48,59,54
-12304,male,group E,some high school,free/reduced,none,single,sometimes,no,1.0,school_bus,< 5,63,65,54
-16989,male,group E,master's degree,free/reduced,none,single,sometimes,yes,3.0,school_bus,5 - 10,85,74,65
-17781,female,group B,some high school,standard,none,married,sometimes,no,4.0,school_bus,> 10,86,88,90
-6804,female,group D,associate's degree,standard,none,single,never,yes,2.0,school_bus,5 - 10,86,79,78
-26648,male,group B,high school,free/reduced,completed,married,sometimes,yes,4.0,private,> 10,66,71,68
-12142,female,group B,some college,standard,completed,married,sometimes,yes,0.0,school_bus,5 - 10,89,92,95
-15697,female,group C,master's degree,free/reduced,completed,married,regularly,no,2.0,school_bus,5 - 10,68,89,84
-3370,male,group A,bachelor's degree,standard,none,divorced,regularly,no,3.0,school_bus,> 10,85,85,76
-12779,female,group D,associate's degree,standard,none,single,never,no,1.0,private,5 - 10,85,94,89
-4527,female,group C,high school,free/reduced,completed,married,sometimes,no,1.0,school_bus,< 5,67,83,74
-3911,female,group C,master's degree,standard,none,married,never,no,7.0,school_bus,< 5,84,89,89
-27111,male,group A,associate's degree,standard,completed,married,sometimes,yes,1.0,private,5 - 10,75,68,78
-12765,male,group C,bachelor's degree,free/reduced,completed,married,regularly,yes,1.0,school_bus,< 5,68,79,77
-23694,female,group E,bachelor's degree,standard,completed,single,regularly,yes,3.0,private,< 5,62,63,66
-10634,male,group D,some college,standard,none,single,sometimes,yes,1.0,private,> 10,52,50,53
-11925,male,group D,some college,standard,none,married,regularly,yes,2.0,private,< 5,85,80,78
-23899,male,group B,some high school,standard,completed,single,regularly,no,2.0,school_bus,> 10,73,66,62
-14360,male,group E,associate's degree,standard,completed,married,sometimes,yes,4.0,school_bus,5 - 10,81,65,64
-2319,female,group A,master's degree,standard,none,divorced,sometimes,no,2.0,school_bus,5 - 10,68,78,81
-29603,male,group C,some high school,free/reduced,completed,divorced,regularly,no,2.0,private,< 5,58,64,60
-4847,female,group C,some high school,free/reduced,none,married,never,yes,1.0,private,< 5,44,60,50
-24071,male,group B,high school,standard,none,divorced,regularly,no,4.0,school_bus,5 - 10,86,79,65
-9380,male,group D,some high school,free/reduced,none,single,regularly,yes,1.0,school_bus,5 - 10,48,51,43
-22260,male,group B,some high school,free/reduced,none,married,sometimes,yes,0.0,private,< 5,45,48,45
-23831,male,group A,bachelor's degree,standard,completed,married,regularly,no,2.0,school_bus,> 10,94,84,90
-18651,male,group E,associate's degree,standard,none,married,regularly,yes,4.0,school_bus,> 10,89,85,80
-12749,female,group D,high school,free/reduced,none,married,sometimes,yes,4.0,school_bus,5 - 10,43,57,61
-8008,male,group B,some college,free/reduced,completed,married,sometimes,yes,2.0,school_bus,5 - 10,62,66,65
-16533,female,group C,some high school,standard,completed,married,regularly,yes,2.0,private,> 10,78,93,99
-11177,female,group C,bachelor's degree,free/reduced,completed,divorced,regularly,no,1.0,private,5 - 10,80,81,83
-29377,female,group E,master's degree,standard,none,divorced,never,no,4.0,private,< 5,94,97,95
-8231,male,group D,bachelor's degree,standard,none,single,regularly,yes,3.0,school_bus,5 - 10,91,81,80
-10059,female,group C,high school,free/reduced,completed,married,regularly,no,1.0,school_bus,< 5,52,58,62
-6161,male,group E,some college,standard,completed,divorced,regularly,yes,3.0,school_bus,< 5,71,68,68
-22510,female,group B,some high school,standard,completed,married,never,yes,3.0,school_bus,> 10,51,68,68
-1428,male,group C,associate's degree,standard,completed,married,sometimes,no,2.0,school_bus,> 10,66,64,65
-11818,male,group C,high school,standard,none,married,sometimes,yes,0.0,school_bus,5 - 10,63,55,55
-9322,male,group D,associate's degree,free/reduced,completed,single,sometimes,yes,0.0,school_bus,5 - 10,64,62,67
-28363,male,group D,high school,standard,completed,married,sometimes,no,3.0,private,5 - 10,78,70,75
-7024,male,group D,some college,standard,completed,married,regularly,yes,2.0,school_bus,< 5,99,92,99
-29975,female,group D,high school,free/reduced,completed,married,sometimes,no,3.0,private,5 - 10,63,77,78
-10799,male,group C,some college,standard,none,divorced,sometimes,yes,2.0,school_bus,5 - 10,60,49,47
-15631,female,group D,high school,standard,completed,married,never,yes,2.0,private,5 - 10,55,70,71
-18290,male,group A,associate's degree,standard,none,divorced,sometimes,yes,4.0,school_bus,5 - 10,50,59,56
-14543,female,group B,some high school,standard,none,married,regularly,yes,1.0,private,5 - 10,53,62,65
-430,female,group D,bachelor's degree,standard,none,divorced,sometimes,no,3.0,school_bus,5 - 10,79,89,89
-19,female,group C,associate's degree,free/reduced,none,married,never,yes,3.0,private,< 5,50,56,58
-17340,male,group C,bachelor's degree,free/reduced,none,divorced,sometimes,yes,5.0,school_bus,5 - 10,71,72,69
-23154,female,group D,bachelor's degree,free/reduced,none,married,sometimes,yes,0.0,school_bus,< 5,55,76,75
-1089,male,group B,some high school,free/reduced,completed,single,sometimes,no,3.0,private,5 - 10,58,61,62
-7410,female,group D,some high school,standard,completed,divorced,sometimes,no,2.0,school_bus,5 - 10,89,100,100
-16678,male,group E,associate's degree,standard,completed,single,regularly,yes,3.0,private,5 - 10,83,68,71
-21908,male,group D,some high school,standard,none,married,sometimes,yes,4.0,private,5 - 10,68,69,62
-469,male,group D,high school,standard,completed,divorced,sometimes,yes,4.0,private,5 - 10,68,64,66
-11883,male,group B,some college,standard,completed,married,sometimes,yes,2.0,school_bus,> 10,100,95,91
-28222,female,group B,associate's degree,standard,none,married,sometimes,yes,1.0,private,> 10,92,100,100
-29032,male,group E,associate's degree,standard,none,married,regularly,yes,2.0,school_bus,< 5,63,55,48
-4602,female,group C,master's degree,free/reduced,completed,single,regularly,no,1.0,private,5 - 10,69,77,81
-2177,male,group D,some college,free/reduced,none,divorced,sometimes,yes,3.0,school_bus,5 - 10,73,70,72
-10411,female,group C,some high school,free/reduced,none,married,sometimes,no,4.0,school_bus,> 10,43,59,49
-28769,female,group D,high school,standard,completed,divorced,sometimes,no,2.0,school_bus,5 - 10,87,97,97
-3171,male,group C,high school,free/reduced,completed,married,regularly,yes,3.0,private,5 - 10,74,75,68
-20673,female,group C,some college,standard,none,married,sometimes,yes,6.0,private,5 - 10,70,86,83
-30056,male,group A,some high school,standard,completed,married,sometimes,no,5.0,private,> 10,79,73,73
-17453,male,group B,associate's degree,standard,none,married,sometimes,yes,4.0,private,5 - 10,67,78,76
-26854,male,group A,high school,free/reduced,completed,married,sometimes,no,2.0,school_bus,5 - 10,37,41,36
-20987,female,group B,high school,free/reduced,none,married,sometimes,yes,5.0,school_bus,5 - 10,42,49,48
-21647,female,group D,some college,standard,none,married,regularly,no,1.0,school_bus,5 - 10,81,79,84
-19336,female,group E,high school,free/reduced,completed,married,sometimes,no,3.0,private,5 - 10,79,86,83
-12947,male,group C,some high school,standard,none,divorced,sometimes,no,2.0,school_bus,5 - 10,84,82,74
-1591,male,group B,some high school,free/reduced,none,married,sometimes,yes,1.0,school_bus,5 - 10,55,52,53
-635,female,group C,high school,free/reduced,none,married,never,no,2.0,school_bus,< 5,62,73,64
-24869,female,group C,associate's degree,free/reduced,completed,married,regularly,no,4.0,school_bus,< 5,59,72,76
-462,male,group B,some high school,standard,completed,divorced,regularly,yes,1.0,school_bus,5 - 10,65,53,58
-8675,male,group C,associate's degree,standard,none,married,sometimes,yes,1.0,school_bus,5 - 10,85,86,81
-30392,male,group C,associate's degree,standard,none,married,regularly,no,1.0,private,5 - 10,62,71,64
-26015,male,group D,some high school,standard,none,married,never,yes,3.0,school_bus,> 10,71,68,67
-3912,female,group D,some high school,standard,none,single,regularly,yes,0.0,school_bus,5 - 10,67,70,77
-2558,male,group C,associate's degree,standard,completed,married,never,yes,0.0,school_bus,5 - 10,74,77,72
-16720,male,group B,high school,free/reduced,completed,married,regularly,no,2.0,school_bus,> 10,57,56,60
-23487,female,group C,master's degree,standard,none,married,never,yes,1.0,school_bus,5 - 10,67,70,78
-7021,female,group B,high school,free/reduced,none,single,regularly,yes,0.0,private,> 10,50,65,62
-29164,male,group C,some college,free/reduced,completed,married,regularly,no,3.0,private,> 10,58,61,64
-1377,female,group C,high school,standard,completed,married,regularly,yes,1.0,school_bus,> 10,97,98,100
-20409,male,group C,associate's degree,standard,completed,married,sometimes,yes,2.0,private,< 5,91,87,81
-10694,male,group B,bachelor's degree,standard,none,single,regularly,no,2.0,school_bus,5 - 10,80,72,68
-20697,male,group D,high school,free/reduced,completed,married,regularly,yes,3.0,school_bus,5 - 10,67,52,57
-21488,male,group D,bachelor's degree,standard,completed,single,sometimes,yes,1.0,private,< 5,77,80,81
-23672,female,group E,high school,standard,completed,married,regularly,yes,0.0,private,< 5,81,85,82
+26167,male,group C,master's degree,standard,completed,married,sometimes,no,4.0,school_bus,< 5,72,78,77
+209,male,group D,some high school,standard,none,married,regularly,no,3.0,school_bus,5 - 10,88,81,76
+1580,male,group A,some college,standard,none,married,regularly,no,3.0,school_bus,5 - 10,76,77,72
+20927,male,group D,high school,free/reduced,none,married,regularly,no,1.0,private,5 - 10,42,48,35
+788,female,group A,some college,free/reduced,none,single,regularly,yes,3.0,school_bus,> 10,64,61,59
+4075,male,group D,some high school,standard,none,divorced,regularly,yes,0.0,private,< 5,62,61,56
+1629,male,group C,associate's degree,standard,completed,married,never,no,4.0,private,> 10,73,71,70
+1893,female,group D,some high school,standard,completed,divorced,sometimes,yes,2.0,private,> 10,46,63,63
+20840,female,group C,associate's degree,standard,none,divorced,sometimes,yes,3.0,private,5 - 10,52,71,62
+6678,male,group D,some high school,standard,none,divorced,sometimes,yes,0.0,school_bus,< 5,54,58,54
+29588,male,group C,some college,free/reduced,none,married,sometimes,no,3.0,private,5 - 10,49,35,34
+24896,male,group C,master's degree,standard,completed,single,sometimes,yes,1.0,private,5 - 10,74,67,65
+23995,male,group C,high school,free/reduced,none,married,regularly,yes,0.0,school_bus,< 5,58,67,58
+28930,female,group B,high school,free/reduced,completed,single,sometimes,yes,2.0,school_bus,5 - 10,66,87,84
+16335,male,group C,bachelor's degree,standard,none,divorced,sometimes,no,4.0,school_bus,5 - 10,79,75,75
+19725,female,group A,bachelor's degree,free/reduced,completed,single,sometimes,no,2.0,school_bus,5 - 10,74,86,86
+26588,female,group B,some college,free/reduced,completed,married,regularly,no,4.0,private,> 10,68,86,84
+15165,male,group B,some college,standard,none,single,never,yes,3.0,private,5 - 10,75,77,74
+26153,male,group E,bachelor's degree,standard,none,married,never,no,3.0,private,5 - 10,93,83,81
+25102,male,group C,some college,standard,none,divorced,sometimes,no,2.0,school_bus,5 - 10,90,80,70
+3048,male,group D,bachelor's degree,standard,none,married,sometimes,yes,0.0,private,> 10,67,57,56
+9176,female,group E,associate's degree,standard,none,married,regularly,no,1.0,private,5 - 10,88,90,85
+15413,male,group B,high school,free/reduced,none,divorced,regularly,yes,4.0,school_bus,5 - 10,60,53,44
+24387,male,group E,associate's degree,standard,none,married,regularly,yes,2.0,school_bus,> 10,100,86,86
+23358,female,group D,some college,standard,completed,married,sometimes,no,2.0,school_bus,5 - 10,88,98,100
+4725,female,group B,associate's degree,free/reduced,completed,single,sometimes,no,4.0,school_bus,> 10,70,92,91
+8034,male,group A,some college,standard,none,single,never,yes,3.0,private,> 10,71,67,59
+21746,male,group B,associate's degree,standard,completed,single,regularly,no,3.0,school_bus,> 10,85,80,79
+15100,female,group E,some college,standard,completed,single,never,yes,4.0,school_bus,5 - 10,70,74,77
+29022,female,group A,some college,standard,completed,married,never,yes,4.0,school_bus,< 5,67,85,83
+5085,male,group C,some high school,free/reduced,completed,divorced,regularly,yes,0.0,private,5 - 10,51,50,54
+9244,male,group B,some college,standard,completed,single,sometimes,no,4.0,school_bus,> 10,76,68,72
+16320,female,group D,some high school,standard,none,single,regularly,yes,3.0,private,> 10,60,69,69
+29592,male,group D,high school,free/reduced,none,married,never,no,1.0,school_bus,< 5,64,68,64
+25515,male,group D,associate's degree,standard,none,married,sometimes,yes,5.0,school_bus,< 5,89,86,86
+26233,male,group B,associate's degree,free/reduced,completed,divorced,sometimes,no,2.0,school_bus,< 5,54,62,54
+29060,male,group B,some high school,standard,none,single,sometimes,no,1.0,private,5 - 10,88,84,75
+27553,female,group B,high school,standard,completed,divorced,sometimes,yes,3.0,private,5 - 10,71,85,83
+17212,male,group B,bachelor's degree,free/reduced,none,married,sometimes,yes,5.0,private,5 - 10,63,78,72
+15927,female,group D,some high school,standard,none,married,sometimes,no,4.0,school_bus,> 10,69,76,74
+22158,male,group B,bachelor's degree,standard,none,divorced,never,yes,2.0,private,> 10,83,76,75
+15568,female,group D,master's degree,standard,none,married,sometimes,yes,2.0,school_bus,5 - 10,79,91,97
+1619,female,group B,associate's degree,free/reduced,none,single,regularly,yes,0.0,school_bus,> 10,64,79,76
+28512,male,group B,high school,standard,none,single,regularly,yes,1.0,school_bus,5 - 10,74,60,55
+1756,female,group C,some college,free/reduced,none,divorced,regularly,no,3.0,school_bus,< 5,70,82,83
+17339,male,group E,some college,standard,none,married,regularly,no,4.0,school_bus,5 - 10,57,52,48
+1898,male,group D,associate's degree,standard,none,single,sometimes,yes,2.0,school_bus,< 5,75,69,64
+9028,female,group E,some high school,standard,none,divorced,regularly,yes,3.0,private,5 - 10,72,71,72
+29424,female,group C,master's degree,standard,completed,married,sometimes,no,2.0,private,5 - 10,52,64,63
+5653,male,group D,some college,free/reduced,none,married,regularly,no,1.0,private,< 5,44,55,50
+19218,male,group C,some high school,standard,completed,single,never,yes,3.0,school_bus,5 - 10,72,74,76
+10466,female,group C,some high school,standard,none,married,regularly,no,3.0,private,< 5,50,50,52
+2850,female,group E,some college,standard,completed,single,regularly,yes,0.0,private,< 5,77,77,81
+14127,female,group D,bachelor's degree,standard,none,married,sometimes,no,5.0,private,> 10,95,95,100
+10148,male,group C,some high school,standard,none,divorced,sometimes,yes,0.0,school_bus,5 - 10,69,61,62
+7652,female,group B,associate's degree,standard,none,single,sometimes,no,1.0,school_bus,< 5,60,70,67
+12661,male,group E,some college,standard,completed,single,sometimes,yes,2.0,private,5 - 10,65,66,58
+17901,female,group A,some college,standard,none,single,regularly,yes,0.0,private,5 - 10,81,100,92
+6047,female,group A,high school,standard,none,married,sometimes,yes,1.0,school_bus,> 10,83,90,88
+1033,male,group A,some college,free/reduced,none,widowed,sometimes,yes,4.0,school_bus,5 - 10,66,68,65
+21607,male,group B,bachelor's degree,free/reduced,completed,divorced,sometimes,yes,1.0,private,5 - 10,31,33,26
+13062,female,group C,some college,standard,none,married,never,yes,1.0,private,5 - 10,58,62,64
+373,female,group B,high school,free/reduced,none,married,never,no,5.0,school_bus,5 - 10,48,65,61
+9158,male,group D,some college,standard,none,single,regularly,yes,2.0,private,< 5,64,60,55
+9818,female,group D,associate's degree,free/reduced,completed,married,regularly,yes,0.0,school_bus,5 - 10,73,80,85
+3059,male,group A,high school,free/reduced,none,divorced,sometimes,yes,4.0,school_bus,> 10,54,43,43
+2912,male,group D,some high school,standard,completed,divorced,sometimes,yes,1.0,private,< 5,64,71,68
+16080,female,group C,some high school,standard,completed,single,regularly,no,1.0,school_bus,5 - 10,63,81,83
+23931,male,group C,associate's degree,standard,none,single,sometimes,yes,2.0,school_bus,5 - 10,80,78,75
+13716,male,group B,master's degree,standard,none,divorced,sometimes,no,3.0,private,5 - 10,92,93,87
+13897,female,group C,high school,standard,completed,married,regularly,yes,1.0,private,< 5,67,72,79
+25046,female,group C,high school,standard,none,divorced,sometimes,yes,1.0,school_bus,< 5,59,67,72
+1645,female,group D,master's degree,standard,completed,single,regularly,yes,1.0,private,5 - 10,81,84,100
+18426,male,group D,some high school,standard,completed,single,regularly,yes,0.0,private,> 10,99,90,97
+20859,male,group D,some college,free/reduced,none,married,sometimes,yes,1.0,school_bus,< 5,48,53,46
+27144,male,group B,high school,standard,none,married,regularly,yes,0.0,private,5 - 10,66,63,65
+26941,male,group D,some high school,standard,none,married,regularly,yes,2.0,school_bus,< 5,70,57,65
+10219,female,group E,associate's degree,standard,none,single,sometimes,no,1.0,school_bus,< 5,77,80,83
+4006,female,group C,some college,standard,none,married,regularly,yes,1.0,school_bus,5 - 10,76,72,75
+4975,female,group B,high school,free/reduced,none,married,sometimes,yes,3.0,private,5 - 10,55,67,57
+23924,female,group D,high school,standard,none,divorced,regularly,no,3.0,school_bus,5 - 10,82,85,86
+4287,female,group E,some high school,free/reduced,none,married,never,yes,2.0,school_bus,< 5,62,66,55
+16315,male,group E,some college,standard,none,single,sometimes,yes,4.0,school_bus,5 - 10,80,71,65
+8952,female,group D,bachelor's degree,standard,none,single,regularly,yes,2.0,private,> 10,63,70,81
+28686,female,group E,some college,free/reduced,none,married,regularly,yes,3.0,private,5 - 10,74,72,71
+26913,female,group D,some college,standard,completed,married,sometimes,no,4.0,private,< 5,69,83,85
+5289,female,group D,some college,standard,none,married,regularly,yes,1.0,school_bus,> 10,40,44,42
+28882,female,group B,some college,free/reduced,completed,married,sometimes,yes,1.0,private,< 5,60,69,69
+9503,male,group B,high school,free/reduced,none,divorced,regularly,no,6.0,school_bus,5 - 10,50,45,45
+22867,male,group C,associate's degree,free/reduced,completed,married,sometimes,no,5.0,private,5 - 10,70,60,58
+19002,female,group B,bachelor's degree,standard,completed,divorced,regularly,yes,5.0,school_bus,5 - 10,65,74,74
+29942,male,group B,high school,standard,none,married,sometimes,no,5.0,school_bus,5 - 10,42,45,42
+28290,male,group C,some high school,standard,completed,single,sometimes,yes,3.0,school_bus,5 - 10,69,70,64
+9277,male,group E,high school,standard,none,single,never,yes,1.0,school_bus,5 - 10,80,72,70
+17917,female,group C,some college,standard,completed,married,never,yes,2.0,school_bus,5 - 10,65,73,73
+9952,female,group D,high school,standard,none,married,regularly,yes,2.0,private,5 - 10,69,66,65
+22400,male,group D,some college,free/reduced,none,married,sometimes,yes,7.0,private,< 5,45,52,49
+7693,female,group A,some college,free/reduced,completed,married,sometimes,yes,2.0,school_bus,5 - 10,76,85,87
+22572,male,group B,some high school,standard,none,married,sometimes,yes,1.0,school_bus,5 - 10,51,50,45
+12901,female,group D,associate's degree,free/reduced,none,married,sometimes,yes,4.0,school_bus,5 - 10,54,55,58
+3275,male,group C,some college,standard,none,married,never,yes,1.0,private,5 - 10,84,84,82
+22899,male,group C,high school,standard,none,married,sometimes,no,1.0,private,5 - 10,54,60,45
+6336,male,group B,high school,free/reduced,completed,married,sometimes,yes,1.0,school_bus,< 5,86,81,74
+16568,female,group D,bachelor's degree,standard,none,married,sometimes,yes,1.0,private,5 - 10,90,94,99
+27407,male,group A,bachelor's degree,standard,none,single,sometimes,yes,2.0,school_bus,< 5,68,67,63
+19433,male,group E,some college,standard,none,married,sometimes,yes,4.0,private,5 - 10,73,61,62
+12790,male,group D,associate's degree,free/reduced,none,married,sometimes,no,3.0,school_bus,> 10,55,60,55
+26777,female,group B,some high school,standard,none,single,regularly,yes,4.0,private,5 - 10,79,81,82
+5522,female,group C,bachelor's degree,free/reduced,completed,married,sometimes,no,3.0,private,5 - 10,69,91,92
+22571,female,group E,associate's degree,free/reduced,none,married,sometimes,yes,0.0,school_bus,< 5,75,81,84
+7930,male,group D,some college,standard,completed,widowed,sometimes,yes,4.0,school_bus,5 - 10,83,75,82
+30382,female,group D,some high school,standard,none,married,sometimes,no,2.0,private,5 - 10,55,54,58
+2227,female,group B,some high school,standard,none,married,sometimes,no,1.0,school_bus,5 - 10,71,74,73
+6388,female,group D,some college,free/reduced,none,married,never,yes,1.0,school_bus,< 5,65,71,66
+7579,female,group B,some college,standard,none,married,regularly,no,4.0,private,> 10,63,72,73
+7105,female,group C,master's degree,standard,completed,widowed,sometimes,no,2.0,private,> 10,73,82,89
+23762,female,group B,some high school,standard,none,single,sometimes,yes,1.0,school_bus,5 - 10,61,68,72
+7925,female,group D,associate's degree,standard,completed,divorced,regularly,no,3.0,school_bus,< 5,59,62,68
+5604,female,group C,bachelor's degree,standard,none,married,sometimes,yes,2.0,private,> 10,77,78,73
+4811,male,group D,master's degree,standard,completed,married,regularly,yes,1.0,private,5 - 10,100,100,99
+22774,female,group C,high school,standard,completed,divorced,regularly,no,1.0,school_bus,> 10,72,84,77
+11502,female,group C,bachelor's degree,standard,completed,married,sometimes,yes,2.0,school_bus,5 - 10,88,95,95
+19305,male,group B,high school,standard,completed,married,never,yes,2.0,school_bus,< 5,51,48,44
+5087,female,group B,some high school,standard,none,single,sometimes,yes,3.0,private,5 - 10,59,54,56
+26884,female,group C,associate's degree,standard,none,married,regularly,yes,3.0,school_bus,5 - 10,85,89,96
+21472,male,group D,high school,standard,none,single,never,yes,1.0,school_bus,5 - 10,64,54,49
+27163,female,group E,associate's degree,free/reduced,none,single,regularly,yes,4.0,private,5 - 10,56,65,67
+23868,male,group C,some college,standard,none,married,sometimes,no,3.0,school_bus,5 - 10,88,80,78
+18305,male,group A,associate's degree,standard,none,married,regularly,no,3.0,private,> 10,61,53,52
+337,female,group C,some college,free/reduced,completed,married,sometimes,yes,1.0,private,< 5,40,65,67
+3045,female,group D,high school,standard,none,single,sometimes,yes,7.0,school_bus,> 10,59,71,67
+4459,female,group D,some high school,standard,completed,married,regularly,yes,2.0,private,< 5,77,86,85
+25825,male,group C,some college,standard,none,married,regularly,yes,1.0,school_bus,< 5,68,65,62
+7334,female,group E,some high school,standard,none,divorced,regularly,no,3.0,private,5 - 10,81,97,91
+30497,male,group C,bachelor's degree,standard,none,single,sometimes,no,4.0,school_bus,> 10,87,90,89
+8560,female,group C,high school,standard,completed,married,sometimes,yes,3.0,private,5 - 10,63,66,66
+17829,female,group D,some college,standard,none,married,sometimes,yes,1.0,private,< 5,75,84,85
+1299,female,group D,some college,free/reduced,none,divorced,sometimes,yes,2.0,private,> 10,63,73,73
+2479,female,group D,associate's degree,standard,none,divorced,sometimes,no,1.0,private,> 10,31,55,46
+28672,female,group C,some college,standard,completed,single,regularly,yes,2.0,school_bus,< 5,58,72,66
+27535,male,group C,some high school,standard,none,married,never,yes,3.0,school_bus,> 10,87,85,79
+30543,male,group B,some college,standard,none,married,regularly,no,3.0,school_bus,5 - 10,72,65,61
+16250,male,group B,high school,standard,none,divorced,sometimes,yes,2.0,private,5 - 10,72,69,64
+8742,male,group E,some high school,standard,completed,single,regularly,yes,2.0,private,5 - 10,87,76,77
+24926,female,group E,some college,free/reduced,none,married,regularly,yes,0.0,private,5 - 10,56,68,69
+11319,female,group C,associate's degree,standard,completed,married,sometimes,no,3.0,private,5 - 10,51,60,55
+9418,male,group B,some high school,standard,none,married,regularly,yes,3.0,school_bus,< 5,83,76,73
+13520,female,group B,master's degree,standard,none,divorced,regularly,no,1.0,school_bus,5 - 10,76,77,79
+8356,male,group E,high school,free/reduced,none,single,regularly,yes,3.0,school_bus,< 5,50,49,47
+14501,male,group C,some high school,standard,completed,married,never,yes,0.0,private,5 - 10,47,41,42
+2885,female,group E,bachelor's degree,free/reduced,none,single,regularly,no,3.0,private,5 - 10,74,70,69
+2051,male,group C,high school,standard,completed,married,sometimes,yes,1.0,private,5 - 10,56,52,47
+7008,female,group C,associate's degree,standard,none,married,regularly,yes,2.0,school_bus,5 - 10,97,97,93
+1317,male,group D,high school,standard,completed,married,regularly,yes,4.0,private,5 - 10,80,72,73
+5729,female,group C,master's degree,standard,completed,widowed,sometimes,yes,2.0,private,5 - 10,65,80,84
+24802,male,group C,some college,standard,none,married,regularly,yes,0.0,school_bus,5 - 10,72,73,67
+27956,female,group D,bachelor's degree,standard,none,single,regularly,yes,3.0,school_bus,5 - 10,71,70,78
+4972,female,group B,associate's degree,standard,completed,married,sometimes,yes,0.0,school_bus,> 10,89,98,97
+11039,female,group C,bachelor's degree,free/reduced,completed,divorced,sometimes,yes,2.0,school_bus,5 - 10,75,84,91
+23416,male,group C,bachelor's degree,standard,completed,married,regularly,no,2.0,school_bus,< 5,67,66,70
+17177,female,group C,master's degree,free/reduced,none,married,never,yes,2.0,school_bus,5 - 10,49,62,62
+20200,male,group C,some high school,standard,none,divorced,never,yes,1.0,private,5 - 10,45,47,35
+23592,male,group D,associate's degree,standard,none,married,regularly,yes,1.0,school_bus,> 10,93,82,90
+20990,male,group C,master's degree,standard,none,married,sometimes,yes,3.0,school_bus,5 - 10,85,83,78
+13662,female,group D,some high school,free/reduced,none,widowed,sometimes,no,1.0,school_bus,5 - 10,54,66,67
+6,female,group B,some college,standard,completed,widowed,never,no,1.0,private,5 - 10,85,93,89
+16103,male,group B,some college,standard,none,married,sometimes,yes,1.0,school_bus,5 - 10,64,59,56
+9029,female,group D,master's degree,free/reduced,none,single,sometimes,yes,2.0,private,> 10,57,67,67
+2586,male,group E,high school,free/reduced,none,married,sometimes,yes,1.0,private,> 10,62,49,46
+10690,male,group D,high school,standard,completed,married,sometimes,yes,1.0,school_bus,5 - 10,52,53,47
+5926,female,group C,high school,free/reduced,completed,single,regularly,yes,4.0,school_bus,5 - 10,57,63,67
+22367,female,group C,some high school,standard,completed,married,sometimes,no,3.0,school_bus,< 5,74,77,76
+18074,female,group C,some college,free/reduced,none,married,sometimes,no,2.0,private,5 - 10,59,74,75
+13987,male,group C,some college,free/reduced,completed,married,regularly,yes,1.0,private,< 5,65,63,64
+20708,female,group D,some college,standard,completed,divorced,regularly,yes,0.0,school_bus,5 - 10,60,62,71
+3409,female,group C,high school,standard,none,married,sometimes,no,1.0,private,5 - 10,50,56,54
+27678,female,group C,high school,free/reduced,none,married,sometimes,no,3.0,school_bus,5 - 10,56,67,57
+23611,male,group C,some college,standard,none,married,sometimes,yes,1.0,school_bus,5 - 10,61,58,58
+8648,male,group A,associate's degree,standard,none,single,regularly,yes,3.0,private,5 - 10,90,76,78
+6209,female,group D,bachelor's degree,standard,completed,married,sometimes,yes,3.0,private,< 5,73,83,84
+23970,male,group C,associate's degree,standard,none,single,sometimes,no,1.0,private,5 - 10,76,74,63
+23111,male,group C,some college,standard,none,married,sometimes,yes,7.0,private,< 5,89,86,78
+7031,male,group D,high school,standard,completed,single,sometimes,yes,3.0,school_bus,5 - 10,64,50,54
+15127,male,group D,some high school,standard,none,widowed,never,yes,2.0,private,< 5,68,64,67
+3591,male,group B,associate's degree,standard,none,married,regularly,yes,5.0,private,5 - 10,58,64,64
+12870,male,group E,some college,standard,completed,single,sometimes,yes,0.0,private,5 - 10,96,78,84
+3832,female,group D,associate's degree,standard,none,married,sometimes,yes,2.0,private,5 - 10,84,86,84
+9841,female,group B,high school,free/reduced,completed,married,sometimes,yes,1.0,private,< 5,44,51,50
+6188,female,group D,master's degree,free/reduced,none,divorced,regularly,yes,0.0,private,5 - 10,36,53,52
+6687,female,group E,some college,free/reduced,completed,single,sometimes,no,1.0,private,> 10,83,88,95
+24837,male,group D,high school,free/reduced,completed,married,regularly,yes,3.0,school_bus,> 10,67,60,62
+10259,female,group E,some college,free/reduced,none,married,sometimes,yes,5.0,private,> 10,62,66,62
+25964,male,group C,some college,standard,none,married,regularly,yes,2.0,private,5 - 10,75,69,72
+376,female,group C,some high school,standard,completed,married,regularly,yes,3.0,private,5 - 10,60,54,68
+4351,male,group C,high school,free/reduced,none,married,regularly,no,3.0,school_bus,5 - 10,75,84,80
+27223,male,group D,associate's degree,free/reduced,none,married,sometimes,no,1.0,private,> 10,67,61,54
+17738,male,group D,some high school,standard,none,divorced,never,yes,2.0,private,< 5,67,69,67
+6673,male,group C,some college,standard,completed,married,regularly,no,1.0,private,5 - 10,78,65,68
+6905,male,group C,associate's degree,standard,none,married,regularly,yes,1.0,private,5 - 10,46,46,45
+13423,female,group D,high school,free/reduced,none,divorced,sometimes,yes,3.0,school_bus,5 - 10,48,54,59
+12064,female,group C,high school,free/reduced,none,single,sometimes,yes,3.0,private,< 5,36,49,47
+6941,female,group B,associate's degree,standard,none,single,sometimes,no,3.0,private,< 5,53,57,63
+24037,male,group C,high school,free/reduced,none,married,regularly,no,4.0,school_bus,5 - 10,61,61,60
+24762,female,group B,some high school,free/reduced,none,single,regularly,yes,0.0,school_bus,< 5,60,77,71
+19179,female,group E,some high school,standard,none,single,sometimes,no,4.0,private,5 - 10,72,82,79
+24289,male,group D,some college,standard,none,married,regularly,no,3.0,private,5 - 10,73,58,62
+24298,female,group B,some high school,standard,completed,married,sometimes,yes,3.0,private,5 - 10,59,63,69
+29156,male,group C,some college,standard,none,single,never,no,3.0,private,> 10,69,66,65
+29534,female,group C,some high school,standard,none,married,never,no,2.0,school_bus,< 5,66,78,72
+30455,male,group D,some college,standard,none,single,sometimes,no,2.0,private,5 - 10,82,67,73
+18952,male,group A,bachelor's degree,standard,completed,married,never,yes,2.0,private,> 10,68,73,74
+7754,male,group D,high school,free/reduced,completed,married,sometimes,yes,0.0,private,> 10,60,61,59
+10056,male,group A,some high school,free/reduced,none,single,regularly,yes,3.0,private,5 - 10,52,45,38
+22672,male,group A,bachelor's degree,standard,none,married,regularly,yes,2.0,school_bus,> 10,100,85,88
+19593,female,group D,some high school,standard,none,divorced,regularly,no,4.0,school_bus,5 - 10,78,76,78
+25862,male,group D,high school,standard,completed,married,sometimes,yes,0.0,school_bus,5 - 10,75,72,72
+17365,female,group E,some high school,standard,none,married,sometimes,no,3.0,school_bus,< 5,70,77,76
+19150,female,group B,some college,standard,none,married,sometimes,no,7.0,private,> 10,72,87,86
+14067,female,group C,some high school,standard,completed,single,never,yes,5.0,school_bus,5 - 10,77,94,84
+21097,male,group C,some high school,standard,completed,married,sometimes,yes,2.0,school_bus,< 5,84,93,90
+17020,female,group D,master's degree,free/reduced,none,married,regularly,no,5.0,school_bus,> 10,44,55,54
+17806,female,group A,some college,standard,none,married,never,yes,0.0,private,5 - 10,70,72,70
+27698,female,group C,bachelor's degree,standard,completed,single,never,no,2.0,private,> 10,71,79,86
+20175,female,group D,high school,standard,none,married,never,no,4.0,school_bus,< 5,41,51,56
+17003,female,group D,some college,standard,completed,single,sometimes,yes,3.0,school_bus,5 - 10,68,92,89
+13015,female,group C,some college,standard,completed,single,sometimes,no,1.0,school_bus,5 - 10,94,100,100
+27624,male,group B,high school,free/reduced,none,single,regularly,no,2.0,school_bus,5 - 10,52,46,43
+10203,female,group B,some high school,free/reduced,none,married,sometimes,no,5.0,school_bus,> 10,38,51,47
+2974,female,group D,bachelor's degree,standard,completed,married,sometimes,yes,2.0,private,< 5,58,67,77
+27187,male,group C,master's degree,standard,none,divorced,never,yes,2.0,school_bus,< 5,78,65,68
+6059,male,group B,some college,standard,none,married,sometimes,no,5.0,private,5 - 10,91,74,75
+30222,female,group C,associate's degree,free/reduced,none,married,sometimes,no,1.0,school_bus,5 - 10,73,71,75
+4930,male,group E,some college,standard,none,married,regularly,yes,1.0,school_bus,5 - 10,78,61,57
+11429,male,group D,associate's degree,standard,completed,divorced,sometimes,yes,3.0,private,5 - 10,74,64,66
+10020,female,group C,some college,standard,none,single,sometimes,yes,2.0,school_bus,> 10,77,79,83
+27452,female,group C,bachelor's degree,free/reduced,none,divorced,sometimes,yes,3.0,private,< 5,67,81,78
+12090,female,group B,some college,free/reduced,none,married,regularly,no,3.0,private,5 - 10,70,78,80
+7692,female,group D,some high school,standard,none,married,sometimes,yes,1.0,school_bus,> 10,51,61,58
+28496,female,group B,high school,free/reduced,none,married,regularly,yes,1.0,school_bus,< 5,55,63,59
+8443,male,group B,high school,free/reduced,none,single,sometimes,no,3.0,school_bus,5 - 10,71,70,66
+14401,female,group D,master's degree,standard,completed,married,sometimes,yes,5.0,school_bus,> 10,100,99,100
+16680,female,group C,high school,standard,completed,married,regularly,no,7.0,school_bus,5 - 10,73,81,84
+24798,female,group C,some high school,standard,none,single,sometimes,yes,4.0,school_bus,5 - 10,59,74,66
+27680,male,group B,associate's degree,free/reduced,none,married,sometimes,yes,3.0,private,5 - 10,72,68,74
+5778,female,group D,associate's degree,standard,completed,married,sometimes,yes,3.0,private,> 10,78,84,85
+11458,female,group C,high school,free/reduced,none,married,regularly,yes,0.0,private,> 10,54,64,69
+14709,female,group C,associate's degree,standard,none,divorced,sometimes,yes,3.0,school_bus,5 - 10,74,82,78
+17032,female,group E,associate's degree,standard,completed,widowed,regularly,yes,1.0,school_bus,5 - 10,71,75,72
+1226,female,group A,some high school,free/reduced,completed,single,sometimes,yes,0.0,school_bus,> 10,59,81,79
+15455,male,group B,bachelor's degree,standard,none,divorced,sometimes,no,1.0,school_bus,< 5,66,63,63
+12606,male,group B,some high school,free/reduced,completed,married,regularly,yes,1.0,private,5 - 10,52,49,44
+645,female,group D,high school,standard,none,divorced,regularly,yes,6.0,school_bus,< 5,66,71,74
+17858,male,group D,master's degree,standard,none,divorced,regularly,yes,2.0,private,> 10,82,84,82
+8059,male,group E,some college,free/reduced,completed,married,regularly,yes,3.0,school_bus,< 5,73,69,66
+28495,male,group C,some college,free/reduced,none,married,regularly,no,3.0,school_bus,< 5,58,56,51
+8813,female,group B,some high school,standard,none,divorced,regularly,yes,0.0,school_bus,5 - 10,54,56,56
+7857,male,group C,associate's degree,standard,none,married,regularly,yes,1.0,school_bus,> 10,66,63,59
+18707,male,group B,high school,standard,completed,single,regularly,yes,3.0,private,5 - 10,57,50,54
+24932,female,group A,high school,standard,none,married,never,yes,5.0,school_bus,< 5,40,49,53
+28885,male,group B,high school,standard,none,single,sometimes,no,3.0,school_bus,< 5,80,64,63
+5010,male,group C,some high school,standard,completed,married,regularly,yes,1.0,school_bus,< 5,96,86,86
+20988,male,group D,some high school,free/reduced,completed,married,regularly,yes,0.0,school_bus,5 - 10,66,57,60
+7899,female,group D,associate's degree,free/reduced,none,single,sometimes,yes,4.0,school_bus,> 10,61,75,71
+23199,female,group E,some high school,free/reduced,none,single,regularly,yes,2.0,private,5 - 10,60,73,73
+774,female,group C,master's degree,standard,completed,married,regularly,yes,3.0,school_bus,< 5,53,63,67
+27113,male,group E,bachelor's degree,standard,none,married,regularly,yes,0.0,school_bus,5 - 10,81,76,69
+29653,female,group C,some college,standard,completed,single,never,no,3.0,private,5 - 10,67,76,79
+5059,male,group B,some college,standard,completed,married,sometimes,yes,2.0,private,5 - 10,81,78,82
+4977,female,group D,some high school,standard,none,married,sometimes,no,1.0,school_bus,5 - 10,86,95,85
+24946,male,group D,high school,standard,completed,single,never,no,1.0,school_bus,< 5,77,79,75
+29462,female,group B,associate's degree,standard,none,single,regularly,no,1.0,school_bus,< 5,45,48,53
+4893,male,group D,bachelor's degree,standard,completed,married,regularly,no,5.0,private,> 10,72,70,70
+8499,female,group C,some high school,standard,none,divorced,sometimes,yes,3.0,school_bus,5 - 10,64,78,74

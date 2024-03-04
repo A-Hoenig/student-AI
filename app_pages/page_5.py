@@ -48,7 +48,7 @@ def page_5_body():
 
 def batch_process_scores(csv_file_path, score_type):
     PATH = "outputs/models/"
-    VERSION = "v1"
+    VERSION = "v2"
 
     # load given model
     pipeline = load_pkl_file(

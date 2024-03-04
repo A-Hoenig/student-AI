@@ -43,12 +43,6 @@ def page_3_body():
         " python library. The quick result is summarized below:\n"
     )
 
-    st.image(
-        load_image("pandas_report"),
-        caption='Summary of Pandas Report.(Click the arrows to enlarge.)',
-        use_column_width="auto",
-        )
-
     st.write(
         "### Imputing Data\n"
         "Imputing data is the act of filling blank data cells with derived"
