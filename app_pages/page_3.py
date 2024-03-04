@@ -28,6 +28,11 @@ def page_3_body():
         " with missing information we end up with 19243 remaining rows:"
     )
 
+    unique_values = load_text(f'dataset_unique_values.txt')
+    if unique_values:
+        st.markdown(f"\n{unique_values}\n", unsafe_allow_html=True)
+
+
     st.image(
         load_image("dropped_rows"),
         caption='Remaining rows after missing value removal',
