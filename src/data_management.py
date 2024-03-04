@@ -6,7 +6,7 @@ import joblib
 from PIL import Image
 from pandas.plotting import table
 
-IMAGE_PATH = "outputs/images/plots/"
+IMAGE_PATH = "outputs/images/"
 PLOT_PATH = "outputs/plots/"
 DF_PATH = "outputs/dataframes/"
 TXT_PATH = "outputs/test/"
@@ -50,11 +50,30 @@ def load_image(image_name):
     # no file is found 
     image = Image.open("src/doc_images/image-not-found.jpeg")
     return image
+    
+
+def load_plot(image_name):
+    # possible extensions
+    extensions = ['.png', '.jpg', '.jpeg', '.gif']
+    
+    for ext in extensions:
+        try:
+            # Attempt to open the image with each extension
+            full_path = f"{PLOT_PATH}{image_name}{ext}"
+            image = Image.open(full_path)
+            return image
+        except FileNotFoundError:
+            # If not found continue to the next extension type
+            continue
+    
+    # no file is found 
+    image = Image.open("src/doc_images/plot-not-found.png")
+    return image
 
 
 def load_text(filename):
     # Define the full path
-    filepath = os.path.join(IMAGE_PATH, filename)
+    filepath = os.path.join(TXT_PATH, filename)
     
     try:
         # Load and return text
@@ -64,7 +83,7 @@ def load_text(filename):
         return None
 
 
-def save_plot(figure, filename, directory='outputs/images/plots'):
+def save_plot(figure, filename, directory=PLOT_PATH):
     # Create directory if it doesn't exist
     if not os.path.exists(directory):
         os.makedirs(directory)
@@ -80,7 +99,7 @@ def save_plot(figure, filename, directory='outputs/images/plots'):
     figure.savefig(filepath, bbox_inches='tight')
 
 
-def save_df(df, filename, directory='outputs/images/plots'):
+def save_df(df, filename, directory=DF_PATH):
     # Create directory if it doesn't exist
     if not os.path.exists(directory):
         os.makedirs(directory)
@@ -97,7 +116,7 @@ def save_df(df, filename, directory='outputs/images/plots'):
         pickle.dump(df, file)
 
 
-def save_analysis(text, filename, directory='outputs/images/plots'):
+def save_analysis(text, filename, directory=TXT_PATH):
     # Create directory if it doesn't exist
     if not os.path.exists(directory):
         os.makedirs(directory)

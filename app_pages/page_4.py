@@ -1,6 +1,6 @@
 import streamlit as st
 import matplotlib.pyplot as plt
-from src.data_management import load_image, load_pkl_file, load_text
+from src.data_management import load_image, load_pkl_file, load_text, load_plot
 
 
 # set global variables
@@ -24,7 +24,7 @@ def page_4_body():
         " student overall performance related to that variable.\n"
         )
 
-    selected_column = st.radio(
+    selected_column = st.selectbox(
         'Select a variable for analysis:', columns_list)
 
     render_column_data(selected_column)
@@ -35,7 +35,7 @@ def page_4_body():
     
     def display_parallel_plot(plot_type):
         # Load and display the selected parallel plot
-        with open(f'outputs/images/plots/parallel_plot_{plot_type}.html', 'r') as f:
+        with open(f'outputs/html/parallel_plot_{plot_type}.html', 'r') as f:
             html_content = f.read()
         st.components.v1.html(html_content, height=400)
 
@@ -60,18 +60,18 @@ def render_column_data(column):
     st.markdown("""---""")
     st.write(f"# {column}\n")
     st.image(
-        load_image(f"{column}-distribution"),
+        load_plot(f"{column}-distribution"),
         caption=f'A distribution-plot of {column} data',
         width=WIDTH,
         )
     st.image(
-        load_image(f"{column}-boxplot"),
+        load_plot(f"{column}-boxplot"),
         caption=f'A box-plot of {column} data',
         use_column_width = 'auto',
         )
 
     st.write(f"## Exam results based on {column}")
-    df = load_pkl_file(f'outputs/images/plots/{column}-data.pkl')  
+    df = load_pkl_file(f'outputs/dataframes/{column}-data.pkl')  
     st.write(df)
 
     mean_max = df['MeanScore'].iloc[0]

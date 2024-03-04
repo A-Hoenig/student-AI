@@ -24,6 +24,7 @@ def page_5_body():
         subjects = ['math', 'reading', 'writing']
 
         for subject in subjects:
+            st.write("---")
             st.write(f"## {subject.capitalize()} Report")
             csv_file.seek(0)  # Reset the file pointer to the beginning
             report_df = batch_process_scores(csv_file, subject)
