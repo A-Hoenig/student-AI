@@ -3,13 +3,14 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+import pickle
 from PIL import Image
 from pandas.plotting import table
 
 IMAGE_PATH = "outputs/images/"
 PLOT_PATH = "outputs/plots/"
 DF_PATH = "outputs/dataframes/"
-TXT_PATH = "outputs/test/"
+TXT_PATH = "outputs/text/"
 
 
 @st.cache(suppress_st_warning=True, allow_output_mutation=True)

@@ -1,9 +1,15 @@
 import streamlit as st
 import matplotlib.pyplot as plt
+from src.data_management import load_image, load_plot
 
 
 def page_1_body():
     st.write("## Project Summary")
+
+    st.image(
+        load_image("title"),
+        use_column_width= 'auto',
+        )
 
     st.info(
         "### Rationale\n"

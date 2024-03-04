@@ -19,13 +19,7 @@ def page_3_body():
         "function:\n"
     )
     
-    # st.image(
-    #     load_image("missing_values"),
-    #     caption='A Summary of all missing values',
-    #     width=400,
-    #     # use_column_width="auto"
-    #     )
-    df = load_pkl_file(f'outputs/images/plots/dataset_missing_values.pkl')  
+    df = load_pkl_file(f'outputs/dataframes/dataset_missing_values.pkl')  
     st.write(df)
 
     st.info(
