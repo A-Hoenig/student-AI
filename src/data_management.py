@@ -7,6 +7,9 @@ from PIL import Image
 from pandas.plotting import table
 
 IMAGE_PATH = "outputs/images/plots/"
+PLOT_PATH = "outputs/plots/"
+DF_PATH = "outputs/df/"
+TXT_PATH = "outputs/txt/"
 
 
 @st.cache(suppress_st_warning=True, allow_output_mutation=True)
@@ -20,6 +23,7 @@ def load_cleaned_data():
         "outputs/dataset/Expanded_data_with_more_features_clean.csv")
     return df
 
+
 def load_pkl_file(file_path):
     try:
         # Attempt to load the file
@@ -27,6 +31,7 @@ def load_pkl_file(file_path):
     except FileNotFoundError:
         # If not found
         return None
+
 
 def load_image(image_name):
     # possible extensions
@@ -45,6 +50,7 @@ def load_image(image_name):
     # no file is found 
     image = Image.open("src/doc_images/image-not-found.jpeg")
     return image
+
 
 def load_text(filename):
     # Define the full path
@@ -73,6 +79,7 @@ def save_plot(figure, filename, directory='outputs/images/plots'):
     # Save the figure
     figure.savefig(filepath, bbox_inches='tight')
 
+
 def save_df(df, filename, directory='outputs/images/plots'):
     # Create directory if it doesn't exist
     if not os.path.exists(directory):
@@ -88,6 +95,7 @@ def save_df(df, filename, directory='outputs/images/plots'):
     # Save the DataFrame using pickle
     with open(filepath, 'wb') as file:
         pickle.dump(df, file)
+
 
 def save_analysis(text, filename, directory='outputs/images/plots'):
     # Create directory if it doesn't exist

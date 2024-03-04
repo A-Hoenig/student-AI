@@ -15,12 +15,12 @@ app = MultiPage(app_name="Student AI")
 
 # Add your app pages here using .add_page()
 app.add_page("Introduction", page_1_body)
-app.add_page("Hypotheses", page_2_body)
-app.add_page("Dataset", page_3_body)
-app.add_page("EDA", page_4_body)
-app.add_page("Report", page_5_body)
-app.add_page("Predict", page_6_body)
-app.add_page("AI performance", page_7_body)
+app.add_page("Project Hypotheses", page_2_body)
+app.add_page("Data Introduction", page_3_body)
+app.add_page("Data Analysis", page_4_body)
+app.add_page("Generate Report", page_5_body)
+app.add_page("Predict Student Results", page_6_body)
+app.add_page("Machine Learning Details", page_7_body)
 
 
 app.run()  # Run the app

@@ -1,6 +1,7 @@
 import os
 import streamlit as st
-from src.data_management import load_original_data, load_cleaned_data, load_image
+from src.data_management import load_original_data, load_cleaned_data
+from src.data_management import load_image, load_pkl_file, load_text
 
 
 def page_3_body():
@@ -18,14 +19,16 @@ def page_3_body():
         "function:\n"
     )
     
-    st.image(
-        load_image("missing_values"),
-        caption='A Summary of all missing values',
-        width=400,
-        # use_column_width="auto"
-        )
+    # st.image(
+    #     load_image("missing_values"),
+    #     caption='A Summary of all missing values',
+    #     width=400,
+    #     # use_column_width="auto"
+    #     )
+    df = load_pkl_file(f'outputs/images/plots/dataset_missing_values.pkl')  
+    st.write(df)
 
-    st.write(
+    st.info(
         "Those are many rows with missing data. Especially the transport"
         " means has 10.2% missing information. If we elimintate all rows"
         " with missing information we end up with 19243 remaining rows:"

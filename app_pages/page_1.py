@@ -52,7 +52,7 @@ def page_1_body():
         "### Ethical Assessment\n"
         "The dataset is anonymized and ethnic grouping only references Group"
         "A-E without specific race categories being named. This is useful for"
-        " handling the data in the exploratory phase. In the deployed phase,"
+        " handling the data in the exploratory phase. In the deployed phase, "
         "the data should remain anonymized and only specific staff must have "
         "access to lists that can link an entry to a specific student at the "
         "school. This information must be protected.\n\n"
@@ -66,7 +66,7 @@ def page_1_body():
         " 1 or 2 or 3 etc\n"
         "* Numerical Variables are continuous between 2 limits and can be"
         " integers or even decimals\n\n"
-        "This project will frqeuently use ML nomenclature."
+        "This project will frequently use ML nomenclature."
     )
 
     st.info(

@@ -1,0 +1,18 @@
+
+** Detailed list of unique values **
+
+Gender: 2 distinct values - ['female' 'male']
+EthnicGroup: 6 distinct values - [nan 'group C' 'group B' 'group A' 'group D' 'group E']
+ParentEduc: 7 distinct values - ["bachelor's degree" 'some college' "master's degree" "associate's degree"
+ 'high school' 'some high school' nan]
+LunchType: 2 distinct values - ['standard' 'free/reduced']
+TestPrep: 3 distinct values - ['none' nan 'completed']
+ParentMaritalStatus: 5 distinct values - ['married' 'single' 'widowed' nan 'divorced']
+PracticeSport: 4 distinct values - ['regularly' 'sometimes' 'never' nan]
+IsFirstChild: 3 distinct values - ['yes' 'no' nan]
+NrSiblings: 9 distinct values - [ 3.  0.  4.  1. nan  2.  5.  7.  6.]
+TransportMeans: 3 distinct values - ['school_bus' nan 'private']
+WklyStudyHours: 4 distinct values - ['< 5' '5 - 10' '> 10' nan]
+MathScore: many values - [71 69 87 45 76 73 85 41 65 37]...
+ReadingScore: many values - [71 90 93 56 78 84 43 64 59 54]...
+WritingScore: many values - [74 88 91 42 75 79 89 39 68 50]...
