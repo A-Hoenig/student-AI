@@ -22,6 +22,4 @@ app.add_page("Machine Learning Details", page_7_body, "Data Analysis")
 app.add_page("Generate Report", page_5_body, "Prediction")
 app.add_page("Predict Student Results", page_6_body, "Prediction")
 
-
-
 app.run()  # Run the app

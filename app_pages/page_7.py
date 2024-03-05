@@ -56,12 +56,37 @@ def page_7_body():
         """
     )
 
+    st.write("# Building the Machine Learning Model")
     st.image(
         load_image("EDA"),
         caption='Machine Learning is a complex process',
         use_column_width= 'auto',
         )
 
+    st.image(
+        load_plot("feature_correlation_matrix"),
+        caption=f'Mapping correlation of Variables',
+        use_column_width= 'auto',
+        )
+
+    col_left, col_mid, col_rt = st.beta_columns(3)
+    with col_left:
+        st.image(
+            load_plot("feature_correlation_MathScore"),
+            caption='Features correlating with Math'
+            )
+    with col_mid:
+        st.image(
+            load_plot("feature_correlation_ReadingScore"),
+            caption='Features correlating with Reading'
+            )
+    with col_rt:
+        st.image(
+            load_plot("feature_correlation_WritingScore"),
+            caption='Features correlating with Writing'
+            )   
+
+    
     st.write("# Final Model Confusion Matrix Results")
     exams = ['math', 'reading', 'writing']
     selected_exam = st.radio("Select Exam Subject:", exams)
