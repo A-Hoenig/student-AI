@@ -36,7 +36,7 @@ class MultiPage:
             for page in pages:
                 button_key = f"nav_button_{page['key']}"
                 if st.sidebar.button(page['title'], key=button_key):
-                    # Update the session state to the clicked page's function and key
+                    # Update the session state
                     st.session_state.selected_page = page['function']
                     st.session_state.selected_page_key = page['key']
         

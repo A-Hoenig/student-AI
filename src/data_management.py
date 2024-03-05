@@ -180,14 +180,14 @@ def clf_performance(
     column_cap = column.capitalize()
 
     # Train set analysis
-    train_title = f"### {column_cap} - Train Set\n\n"
+    train_title = f"{column_cap} - Train Set\n\n"
     train_report = train_title + confusion_matrix_and_report(
         train_features, train_scores, pipeline, label_map)
     save_analysis(train_report, f'confusion-matrix-{column}-train.txt')
     print(train_report)
 
     # Test set analysis,
-    test_title = f"### {column_cap} - Test Set\n\n"
+    test_title = f"{column_cap} - Test Set\n\n"
     test_report = test_title + confusion_matrix_and_report(
         test_features, test_scores, pipeline, label_map)
     save_analysis(test_report, f'confusion-matrix-{column}-test.txt')

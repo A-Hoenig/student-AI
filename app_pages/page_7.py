@@ -90,12 +90,24 @@ def page_7_body():
     st.write("# Final Model Confusion Matrix Results")
     exams = ['math', 'reading', 'writing']
     selected_exam = st.radio("Select Exam Subject:", exams)
-    
-    train_report = load_text(f'confusion-matrix-{selected_exam}-train.txt')
-    if train_report:
-        st.markdown(f"\n{train_report}\n", unsafe_allow_html=True)
 
-    test_report = load_text(f'confusion-matrix-{selected_exam}-test.txt')
-    if test_report:
-        st.markdown(f"\n{test_report}\n", unsafe_allow_html=True)
+    col1, col2 = st.beta_columns(2)
+    with col1:
+        model_version = "v2"
+        st.image(
+                f"outputs/models/{selected_exam}/{model_version}/"
+                f"{selected_exam}-feature-importance.png",
+                caption=f'Most significant features for predicting {selected_exam}',
+                width=250
+                )
+    with col2:
+        train_report = load_text(f'confusion-matrix-{selected_exam}-train.txt')
+        if train_report:
+            text_size = "10px" 
+            # Force HTML/CSS to set font
+            st.markdown(f"<p style='font-size: {text_size};'>{train_report}</p>", unsafe_allow_html=True)
+
+        test_report = load_text(f'confusion-matrix-{selected_exam}-test.txt')
+        if test_report:
+            st.markdown(f"<p style='font-size: {text_size};'>{test_report}</p>", unsafe_allow_html=True)
 
