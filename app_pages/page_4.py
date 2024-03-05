@@ -2,7 +2,6 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from src.data_management import load_image, load_pkl_file, load_text, load_plot
 
-
 # set global variables
 # std histogram width
 WIDTH=300
@@ -27,8 +26,34 @@ def page_4_body():
     selected_column = st.selectbox(
         'Select a variable for analysis:', columns_list)
 
+  
+    # Build toggel button to show explanations
+    if 'toggle' not in st.session_state:
+        st.session_state.toggle = False
+    # button clicked
+    if st.button('Show/Hide plot explanations'):
+        st.session_state.toggle = not st.session_state.toggle
+
+    # Based on state, show or hide data
+    if st.session_state.toggle:
+        st.image(
+            load_image("box-plot-explained"),
+            use_column_width= 'auto',
+            )
+        st.info(
+            """
+            * The 'box' shows where 50% of the data is
+            * The line in the middle displays the median
+            * The edges of the box are the 25% and 75% lines
+            * Almost all of the values are between the two lines outside the
+            box
+            * The dots outside the lines represent very rare outliers
+            """
+        )   
+    
     render_column_data(selected_column)
 
+    st.write('---')
     st.write(
         "## Assessing the Numerical Variables (Scores)"
     )
@@ -54,7 +79,7 @@ def page_4_body():
         )
 
     st.write('---')
-    st.write('# Variable Relationships to Scores')
+    st.write('# Variable relationships to Scores')
     
     def display_parallel_plot(plot_type):
         # Load and display the selected parallel plot
