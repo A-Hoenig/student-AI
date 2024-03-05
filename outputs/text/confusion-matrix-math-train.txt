@@ -1,0 +1,18 @@
+### Train Set
+
+#### Confusion Matrix
+
+|                                     |   Actual might need assistance |   Actual will not need assistance |
+|:------------------------------------|-------------------------------:|----------------------------------:|
+| Prediction might need assistance    |                           6194 |                              6551 |
+| Prediction will not need assistance |                           2373 |                              9394 |
+
+#### Classification Report
+
+|                          | precision   | recall   |   f1-score | support   |
+|:-------------------------|:------------|:---------|-----------:|:----------|
+| might need assistance    | 0.723       | 0.486    |      0.581 | 12745     |
+| will not need assistance | 0.589       | 0.798    |      0.678 | 11767     |
+| accuracy                 |             |          |      0.636 |           |
+| macro avg                | 0.656       | 0.642    |      0.63  | 24512     |
+| weighted avg             | 0.659       | 0.636    |      0.628 | 24512     |

@@ -19,7 +19,7 @@ def page_4_body():
         " we can use various plotting and statistical techniques to visualize"
         " the data and assess where features might be related.\n\n"
         "Below, each variable will be visualized and assessed. The average"
-        " (mean) of Maths, Reading and Writing was also added to assess"
+        " (Mean) of Maths, Reading and Writing was also added to assess"
         " student overall performance related to that variable.\n"
         )
 
@@ -31,7 +31,7 @@ def page_4_body():
 
     st.write('---')
     st.write(
-        "## Assessing the Numerical Variables (Scores)"
+        "## Assessing the Numerical Variables (Mean Score)"
     )
     st.image(
         load_plot("Numerical-distribution"),
