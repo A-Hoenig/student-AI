@@ -7,25 +7,25 @@ class MultiPage:
     def __init__(self, app_name) -> None:
         self.pages = {}
         self.app_name = app_name
-        self.first_page_set = False
 
         st.set_page_config(
             page_title=self.app_name,
             page_icon="🎓")
         
-        # Remember the session state
-        if 'selected_page' not in st.session_state:
+        if 'selected_page_key' not in st.session_state:
+            st.session_state.selected_page_key = None
             st.session_state.selected_page = None
 
     def add_page(self, title, func, group_name=None) -> None:
+        key = f"{group_name}_{title}" 
         if group_name not in self.pages:
             self.pages[group_name] = []
-        self.pages[group_name].append({"title": title, "function": func})
-        # Load first page by default
-        if not self.first_page_set:
+        self.pages[group_name].append({"title": title, "function": func, "key": key})
+        
+        # Automatically set the first added page as the default
+        if not st.session_state.selected_page:
             st.session_state.selected_page = func
-            #remember page has been loaded
-            self.first_page_set = True
+            st.session_state.selected_page_key = key
 
     def run(self):
         st.title(self.app_name)
@@ -34,10 +34,12 @@ class MultiPage:
             if group_name:
                 st.sidebar.header(group_name)
             for page in pages:
-                button_key = f"button_{group_name}_{page['title']}"
+                button_key = f"nav_button_{page['key']}"
                 if st.sidebar.button(page['title'], key=button_key):
+                    # Update the session state to the clicked page's function and key
                     st.session_state.selected_page = page['function']
+                    st.session_state.selected_page_key = page['key']
         
-        # Run the selected page
+        # Execute the selected page function
         if st.session_state.selected_page:
             st.session_state.selected_page()

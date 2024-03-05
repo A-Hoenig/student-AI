@@ -4,15 +4,15 @@
 
 |                                  |   Actual Might need assistance |   Actual No assistance needed |
 |:---------------------------------|-------------------------------:|------------------------------:|
-| Prediction Might need assistance |                           8708 |                          4032 |
-| Prediction No assistance needed  |                           5710 |                          6062 |
+| Prediction Might need assistance |                           8872 |                          3868 |
+| Prediction No assistance needed  |                           5076 |                          6696 |
 
 #### Classification Report
 
 |                       | precision   | recall   |   f1-score | support   |
 |:----------------------|:------------|:---------|-----------:|:----------|
-| Might need assistance | 0.604       | 0.684    |      0.641 | 12740     |
-| No assistance needed  | 0.601       | 0.515    |      0.554 | 11772     |
-| accuracy              |             |          |      0.603 |           |
-| macro avg             | 0.602       | 0.599    |      0.598 | 24512     |
-| weighted avg          | 0.602       | 0.603    |      0.6   | 24512     |
+| Might need assistance | 0.636       | 0.696    |      0.665 | 12740     |
+| No assistance needed  | 0.634       | 0.569    |      0.6   | 11772     |
+| accuracy              |             |          |      0.635 |           |
+| macro avg             | 0.635       | 0.633    |      0.632 | 24512     |
+| weighted avg          | 0.635       | 0.635    |      0.634 | 24512     |

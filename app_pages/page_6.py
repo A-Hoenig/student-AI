@@ -70,7 +70,7 @@ def AcquireInputs():
 
     df = load_cleaned_data()
 
-    column1, column2, column3 = st.beta_columns(3)
+    column1, column2, column3, column4, column5 = st.beta_columns(5)
 
     input_features = pd.DataFrame([], index=[0])
 
@@ -98,12 +98,20 @@ def AcquireInputs():
         )
     input_features[feature] = streamlit_widget
 
-    # with column4:
-    #     feature = 'TestPrep'
-    #     streamlit_widget = st.selectbox(
-    #         label=feature,
-    #         options=df[feature].unique()
-    #     )
-    # input_features[feature] = streamlit_widget
+    with column4:
+        feature = 'Gender'
+        streamlit_widget = st.radio(
+            label=feature,
+            options=df[feature].unique()
+        )
+    input_features[feature] = streamlit_widget
+
+    with column5:
+        feature = 'TestPrep'
+        streamlit_widget = st.radio(
+            label=feature,
+            options=df[feature].unique()
+        )
+    input_features[feature] = streamlit_widget
 
     return input_features
