@@ -14,7 +14,7 @@ def page_2_body():
         " overall performance.\n")
     st.info("### EthnicGroup:\n"
         "ethnicity (when regarded in socio-economic terms) will influence "
-        "student perfromance. In this case the specfic groups are anonymized."
+        "student performance. In this case the specfic groups are anonymized."
         "\n")
     st.info("### ParentEduc:\n"
         "Parental education will influence student performance as I "

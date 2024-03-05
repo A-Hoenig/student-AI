@@ -36,7 +36,10 @@ def page_1_body():
         "2. Provide an interface to an ML algorithm that, given a student's"
         " data, can predict their final score and flag students who will need "
         "support.\n"
-        "3. Due to personal data being involved, the interface should be "
+        "3. A dashboard should be created as the interface to the model. "
+        "The school wishes to predict individual students or process an "
+        "entire class by uploading a csv file.\n"
+        "4. Due to personal data being involved, the interface should be "
         "deployed on their own server and offer a simple dashboard for school"
         " counsellors."
     )
