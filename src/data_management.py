@@ -1,4 +1,5 @@
 import os
+import io
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -6,6 +7,7 @@ import joblib
 import pickle
 from PIL import Image
 from pandas.plotting import table
+from sklearn.metrics import classification_report, confusion_matrix
 
 IMAGE_PATH = "outputs/images/"
 PLOT_PATH = "outputs/plots/"
@@ -132,3 +134,61 @@ def save_analysis(text, filename, directory=TXT_PATH):
     # Save the text
     with open(filepath, 'w') as file:
         file.write(text)
+
+
+def confusion_matrix_and_report(x, y, pipeline, label_map):
+    output = io.StringIO()
+    prediction = pipeline.predict(x)
+
+    # Confusion matrix to markdown table
+    cm_df = pd.DataFrame(confusion_matrix(y, prediction),
+                         columns=[f"Actual {sub}" for sub in label_map], 
+                         index=[f"Prediction {sub}" for sub in label_map])
+    output.write('#### Confusion Matrix\n\n')
+    output.write(cm_df.to_markdown())
+    output.write("\n\n")
+
+    # Classification Report to markdown table
+    report = classification_report(y, prediction, 
+                                   target_names=label_map, 
+                                   output_dict=True)
+    report_df = pd.DataFrame(report).transpose()
+
+    # Ensure 'support' is int before rounding
+    report_df['support'] = report_df['support'].apply(
+        lambda x: '' if pd.isna(x) else int(x))
+    report_df = report_df.round(3)
+
+    # Adjust accuracy row
+    if 'accuracy' in report_df.index:
+        accuracy = report_df.loc['accuracy', 'f1-score']
+        report_df.loc['accuracy', ['precision', 'recall', 'support']] = ""
+        report_df.loc['accuracy', 'f1-score'] = accuracy
+
+    output.write('#### Classification Report\n\n')
+    output.write(report_df.to_markdown())
+    output.write("\n")
+
+    return output.getvalue()
+
+def clf_performance(
+    train_features, train_scores, 
+    test_features, test_scores, 
+    pipeline, label_map, column):
+
+    # Column Title
+    column_cap = column.capitalize()
+
+    # Train set analysis
+    train_title = f"### {column_cap} - Train Set\n\n"
+    train_report = train_title + confusion_matrix_and_report(
+        train_features, train_scores, pipeline, label_map)
+    save_analysis(train_report, f'confusion-matrix-{column}-train.txt')
+    print(train_report)
+
+    # Test set analysis,
+    test_title = f"### {column_cap} - Test Set\n\n"
+    test_report = test_title + confusion_matrix_and_report(
+        test_features, test_scores, pipeline, label_map)
+    save_analysis(test_report, f'confusion-matrix-{column}-test.txt')
+    print(test_report)

@@ -1,0 +1,18 @@
+### Reading - Test Set
+
+#### Confusion Matrix
+
+|                                  |   Actual Might need assistance |   Actual No assistance needed |
+|:---------------------------------|-------------------------------:|------------------------------:|
+| Prediction Might need assistance |                           2212 |                          1041 |
+| Prediction No assistance needed  |                           1400 |                          1476 |
+
+#### Classification Report
+
+|                       | precision   | recall   |   f1-score | support   |
+|:----------------------|:------------|:---------|-----------:|:----------|
+| Might need assistance | 0.612       | 0.68     |      0.644 | 3253      |
+| No assistance needed  | 0.586       | 0.513    |      0.547 | 2876      |
+| accuracy              |             |          |      0.602 |           |
+| macro avg             | 0.599       | 0.597    |      0.596 | 6129      |
+| weighted avg          | 0.6         | 0.602    |      0.599 | 6129      |
