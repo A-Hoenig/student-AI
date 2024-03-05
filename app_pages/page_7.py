@@ -1,6 +1,6 @@
 import streamlit as st
 import matplotlib.pyplot as plt
-from src.data_management import load_image, load_plot
+from src.data_management import load_image, load_plot, load_text
 
 def page_7_body():
     st.write("## Technical Explanation")
@@ -62,4 +62,15 @@ def page_7_body():
         use_column_width= 'auto',
         )
 
+    st.write("# Final Model Confusion Matrix Results")
+    exams = ['math', 'reading', 'writing']
+    selected_exam = st.radio("Select Exam Subject:", exams)
     
+    train_report = load_text(f'confusion-matrix-{selected_exam}-train.txt')
+    if train_report:
+        st.markdown(f"\n{train_report}\n", unsafe_allow_html=True)
+
+    test_report = load_text(f'confusion-matrix-{selected_exam}-test.txt')
+    if test_report:
+        st.markdown(f"\n{test_report}\n", unsafe_allow_html=True)
+
