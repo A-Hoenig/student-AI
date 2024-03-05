@@ -26,31 +26,7 @@ def page_4_body():
     selected_column = st.selectbox(
         'Select a variable for analysis:', columns_list)
 
-  
-    # Build toggel button to show explanations
-    if 'toggle' not in st.session_state:
-        st.session_state.toggle = False
-    # button clicked
-    if st.button('Show/Hide plot explanations'):
-        st.session_state.toggle = not st.session_state.toggle
-
-    # Based on state, show or hide data
-    if st.session_state.toggle:
-        st.image(
-            load_image("box-plot-explained"),
-            use_column_width= 'auto',
-            )
-        st.info(
-            """
-            * The 'box' shows where 50% of the data is
-            * The line in the middle displays the median
-            * The edges of the box are the 25% and 75% lines
-            * Almost all of the values are between the two lines outside the
-            box
-            * The dots outside the lines represent very rare outliers
-            """
-        )   
-    
+      
     render_column_data(selected_column)
 
     st.write('---')
@@ -74,7 +50,7 @@ def page_4_body():
         )
     st.image(
         load_plot("Numerical-qq"),
-        caption=f'QQ Plots show how the data is distributed.',
+        caption=f'QQ Plots show if the data is normally distributed.',
         use_column_width= 'auto',
         )
 
@@ -117,6 +93,30 @@ def render_column_data(column):
         caption=f'A box-plot of {column} data',
         use_column_width = 'auto',
         )
+
+    # Build toggle button to show explanations
+    if 'toggle' not in st.session_state:
+        st.session_state.toggle = False
+    # button clicked
+    if st.button('Show/Hide plot explanations'):
+        st.session_state.toggle = not st.session_state.toggle
+
+    # Based on state, show or hide data
+    if st.session_state.toggle:
+        st.image(
+            load_image("box-plot-explained"),
+            use_column_width= 'auto',
+            )
+        st.info(
+            """
+            * The 'box' or IQR shows where 50% of the data is
+            * The line in the middle displays the median
+            * The edges of the box are the 25% and 75% lines
+            * Almost all of the values are between the two lines outside the
+            box (extremes)
+            * The dots outside the lines represent individual rare outliers
+            """
+        )   
 
     st.write(f"## Exam results based on {column}")
     df = load_pkl_file(f'outputs/dataframes/{column}-data.pkl')  
