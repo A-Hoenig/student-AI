@@ -15,10 +15,27 @@ class MultiPage:
         # https://docs.streamlit.io/en/stable/api.html#streamlit.set_page_config
         # https://twemoji.maxcdn.com/2/test/preview.html
 
-    def add_page(self, title, func) -> None:
-        self.pages.append({"title": title, "function": func})
+    def add_page(self, title, func, group=None) -> None:
+        self.pages.append({"title": title, "function": func, "group": group})
 
     def run(self):
         st.title(self.app_name)
-        page = st.sidebar.radio('Menu', self.pages, format_func=lambda page: page['title'])
-        page['function']()
+        # Initial = no group
+        current_group = None
+
+        for page in self.pages:
+            # Check for new group
+            if page['group'] != current_group:
+                # not the first group, add a separator
+                if current_group is not None:
+                    st.sidebar.markdown("---")
+                # Update current group to new group
+                current_group = page['group']
+                # Add group name as a header if you want
+                if current_group:
+                    st.sidebar.header(current_group)
+
+            # list the pages normally
+            if st.sidebar.button(page['title']):
+                page['function']()
+                break
