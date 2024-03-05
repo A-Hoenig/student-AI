@@ -98,7 +98,7 @@ def render_column_data(column):
     if 'toggle' not in st.session_state:
         st.session_state.toggle = False
     # button clicked
-    if st.button('Show/Hide plot explanations'):
+    if st.button('Show/Hide box-plot explanations'):
         st.session_state.toggle = not st.session_state.toggle
 
     # Based on state, show or hide data
@@ -128,6 +128,7 @@ def render_column_data(column):
     spread_rounded = round(spread, 2)
     st.warning(f'**Mean Range: {spread_rounded}**')
 
+    st.write(f"## Interpreting the {column} variable:")
     analysis = load_text(f'{column}-analysis.txt')
     if analysis:
         st.info(analysis)
