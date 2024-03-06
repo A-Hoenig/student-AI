@@ -194,7 +194,7 @@ def page_8_body():
     st.warning(
         """
         **PARTIALLY FALSE**. While a mean range of 3.0 shows a small impact on
-        exm results, again, it was not shown to have any predictive power for
+        exam results, again, it was not shown to have any predictive power for
         the ML algorithms. This was somewhat surprising, as the amount of
         study would normally be assumed to have a significant impact on
         student performance.

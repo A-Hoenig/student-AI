@@ -4,13 +4,14 @@ from src.data_management import load_image, load_pkl_file, load_text, load_plot
 
 # set global variables
 # std histogram width
-WIDTH=300
+WIDTH = 300
 
-#Columns user can select in dropdown
-columns_list = ['Gender', 'EthnicGroup', 'ParentEduc', 'LunchType', 
-                    'TestPrep', 'ParentMaritalStatus', 'PracticeSport', 
-                    'IsFirstChild', 'NrSiblings', 'TransportMeans',
-                    'WklyStudyHours']
+# Columns user can select in dropdown
+columns_list = ['Gender', 'EthnicGroup', 'ParentEduc', 'LunchType',
+                'TestPrep', 'ParentMaritalStatus', 'PracticeSport',
+                'IsFirstChild', 'NrSiblings', 'TransportMeans',
+                'WklyStudyHours']
+
 
 def page_4_body():
 
@@ -27,7 +28,6 @@ def page_4_body():
     selected_column = st.selectbox(
         'Select a variable for analysis:', columns_list)
 
-      
     render_column_data(selected_column)
 
     st.write('---')
@@ -37,27 +37,27 @@ def page_4_body():
     st.image(
         load_plot("Numerical-distribution"),
         caption=f'Distribution plots of the Score Values',
-        use_column_width= 'auto',
+        use_column_width='auto',
         )
     st.image(
         load_plot("Numerical-boxplots"),
         caption=f'Boxplots visualizing the standard deviation and outliers',
-        use_column_width= 'auto',
+        use_column_width='auto',
         )
     st.image(
         load_plot("Numerical-kde"),
         caption=f'Kernel Density Estimation - Data density',
-        use_column_width= 'auto',
+        use_column_width='auto',
         )
     st.image(
         load_plot("Numerical-qq"),
         caption=f'QQ Plots show if the data is normally distributed.',
-        use_column_width= 'auto',
+        use_column_width='auto',
         )
 
     st.write('---')
     st.write('# Variable relationships to Scores')
-    
+
     def display_parallel_plot(plot_type):
         # Load and display the selected parallel plot
         with open(f'outputs/html/parallel_plot_{plot_type}.html', 'r') as f:
@@ -71,13 +71,13 @@ def page_4_body():
     display_parallel_plot(selected_plot)
 
     st.info(
-        """These plots are interactive. You can drag the order of the 
-        variables. The scores have been combined into 5 'bins' ranging from 
+        """These plots are interactive. You can drag the order of the
+        variables. The scores have been combined into 5 'bins' ranging from
         Failed to Exceptional. You can trace the path of each student through
         each data feature to see where they place in the score ranking.
-        
+
         """)
-   
+
 
 def render_column_data(column):
 
@@ -92,7 +92,7 @@ def render_column_data(column):
     st.image(
         load_plot(f"{column}-boxplot"),
         caption=f'A box-plot of {column} data',
-        use_column_width = 'auto',
+        use_column_width='auto',
         )
 
     # Build toggle button to show explanations
@@ -106,7 +106,7 @@ def render_column_data(column):
     if st.session_state.toggle:
         st.image(
             load_image("box-plot-explained"),
-            use_column_width= 'auto',
+            use_column_width='auto',
             )
         st.info(
             """
@@ -117,10 +117,10 @@ def render_column_data(column):
             box (extremes)
             * The dots outside the lines represent individual rare outliers
             """
-        )   
+        )
 
     st.write(f"## Exam results based on {column}")
-    df = load_pkl_file(f'outputs/dataframes/{column}-data.pkl')  
+    df = load_pkl_file(f'outputs/dataframes/{column}-data.pkl')
     st.write(df)
 
     mean_max = df['MeanScore'].iloc[0]
@@ -133,7 +133,3 @@ def render_column_data(column):
     analysis = load_text(f'{column}-analysis.txt')
     if analysis:
         st.info(analysis)
-
-
-
-

@@ -11,17 +11,18 @@ class MultiPage:
         st.set_page_config(
             page_title=self.app_name,
             page_icon="🎓")
-        
+
         if 'selected_page_key' not in st.session_state:
             st.session_state.selected_page_key = None
             st.session_state.selected_page = None
 
     def add_page(self, title, func, group_name=None) -> None:
-        key = f"{group_name}_{title}" 
+        key = f"{group_name}_{title}"
         if group_name not in self.pages:
             self.pages[group_name] = []
-        self.pages[group_name].append({"title": title, "function": func, "key": key})
-        
+        self.pages[group_name].append(
+            {"title": title, "function": func, "key": key})
+
         # Automatically set the first added page as the default
         if not st.session_state.selected_page:
             st.session_state.selected_page = func
@@ -29,7 +30,7 @@ class MultiPage:
 
     def run(self):
         st.title(self.app_name)
-        
+
         for group_name, pages in self.pages.items():
             if group_name:
                 st.sidebar.header(group_name)
@@ -39,7 +40,8 @@ class MultiPage:
                     # Update the session state
                     st.session_state.selected_page = page['function']
                     st.session_state.selected_page_key = page['key']
-        
+
         # Execute the selected page function
         if st.session_state.selected_page:
             st.session_state.selected_page()
+            

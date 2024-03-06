@@ -12,7 +12,8 @@ def maths(
 
     # Make prediction
     math_prediction = math_pipeline.predict(math_input_features)
-    math_prediction_probability = math_pipeline.predict_proba(math_input_features)
+    math_prediction_probability = math_pipeline.predict_proba(
+        math_input_features)
 
     # Display results
     probability = math_prediction_probability[0, math_prediction][0]*100

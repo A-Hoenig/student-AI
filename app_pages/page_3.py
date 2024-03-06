@@ -4,7 +4,6 @@ from src.data_management import load_original_data, load_cleaned_data
 from src.data_management import load_image, load_pkl_file, load_text
 
 
-
 def page_3_body():
     st.write("## DATASET")
     st.write("### Original Dataset")
@@ -16,7 +15,7 @@ def page_3_body():
         " Columns. Scanning through, you can see some cells containing"
         " <NA> which stands for not available. This is where the data import"
         " found a blank cell. The unnamed column is also redundant and will "
-        "be removed in a later step." 
+        "be removed in a later step."
     )
 
     st.write("### We can use a function to extract all the unique values:\n")
@@ -28,7 +27,7 @@ def page_3_body():
         "### We can summarize empty cells with a function:\n"
     )
 
-    df = load_pkl_file(f'outputs/dataframes/dataset_missing_values.pkl')  
+    df = load_pkl_file(f'outputs/dataframes/dataset_missing_values.pkl')
     st.write(df)
 
     st.info(
@@ -74,7 +73,7 @@ def page_3_body():
         "removed (dropped).  \n The objective is to reduce the features to as "
         "few as neccessary to simplify the model and increase speed and "
         "accuracy."
-        
+
     )
 
     st.write(
@@ -180,4 +179,3 @@ def page_3_body():
         "* FINAL READING SCORE **(TARGET)**\n"
         "* FINAL WRITING SCORE **(TARGET)**\n"
     )
-    

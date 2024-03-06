@@ -2,7 +2,7 @@
 The dataset provided is a list of fictitious student performance data from an unnamed college. The dataset can be found here:
 https://www.kaggle.com/datasets/desalegngeb/students-exam-scores
 
-the source offers 2 versions of the dataset, a smaller one with complete data and fewer features, and a larger one with fewer datarows, but more alvailable features. This larger dataset also has the additional requirement of some data cleaning as some values are missing, and need to be corrected for.
+The source offers 2 versions of the dataset, a smaller one with complete data and fewer features, and a larger one with fewer datarows, but more available features. This larger dataset also has the additional requirement of some data cleaning as some values are missing, and need to be corrected for.
 
 For the purpose of this project, I will use the second set to demonstrate some data cleaning that might be required before the exploratory data analysis and model training.
 
@@ -32,6 +32,9 @@ The following metrics were decided with the stakeholder (school administration) 
 
 ### Purpose:
 The primary objective is to create an interactive, user-friendly dashboard for school counselors and educators. This tool aims to predict student performance in math, reading, and writing, focusing on identifying students at risk of not achieving a passing grade. The dashboard will facilitate early intervention and personalized support strategies. The dashboard should be deployed to their internal server and allow counsellors secure access to the database and prediction model so they can prepapre for student counselling sessions.
+
+## User stories
+
 
 
 ## Hypothesis

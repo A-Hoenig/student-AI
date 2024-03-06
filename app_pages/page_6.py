@@ -61,10 +61,13 @@ def page_6_body():
             input_features, math_features, math_pipeline, math_label_map)
 
         reading(
-            input_features, reading_features, reading_pipeline, reading_label_map)
+            input_features,
+            reading_features, reading_pipeline, reading_label_map)
 
         writing(
-            input_features, writing_features, writing_pipeline, writing_label_map)
+            input_features,
+            writing_features, writing_pipeline, writing_label_map)
+
 
 def AcquireInputs():
 

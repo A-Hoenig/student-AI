@@ -8,7 +8,7 @@ def page_1_body():
 
     st.image(
         load_image("title"),
-        use_column_width= 'auto',
+        use_column_width='auto',
         )
 
     st.info(
@@ -78,8 +78,7 @@ def page_1_body():
         "This project will frequently use ML nomenclature."
     )
 
-
-    st.write("the detailed files behind this project can be viewed here:\n\n"
+    st.write(
+        "the detailed files behind this project can be viewed here:\n\n"
         "https://github.com/A-Hoenig/student-AI"
     )
-    
