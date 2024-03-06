@@ -141,17 +141,17 @@ def page_7_body():
 
         For ML learning it is of no use to predict, say the Math score, by 
         correlating it to the Reading score (as these are not available) and
-        the objective is to predict all 3 values.
+        the objective is to **predict** all 3 values.
 
         For this reason, all but one score are removed from the data and we
         attempt to find correlations of the other features that are related to
-        high Math scores.
+        high specific exam scores.
 
         This can be seen individually in the plots underneath the matrix.
 
         If we disregard the other Numerical scores, we find that 5 features
         have values around 0.2. When seen in relation to all other features,
-        a value of >0.2 can be considered to have some significane in 
+        a value of >0.2 can be considered to have some significance in 
         predicting the score. 
 
         Looking at the plots we can see that all 3 vary slightly, but the top
@@ -163,7 +163,7 @@ def page_7_body():
         * ParentEducation
         * TestPreparation
 
-        some more than others, depending on the exam type. For instance,
+        The order changes depending on the exam type. For instance,
         looking closely, we can see that for predicting writing, Gender is
         more important than LunchType. For Maths, Gender plays a smaller role.
 
@@ -196,12 +196,69 @@ def page_7_body():
         if test_report:
             st.markdown(f"<p style='font-size: {text_size};'>{test_report}</p>", unsafe_allow_html=True)
 
+    st.write('You can select each exam type using the buttons above.\n'
+            'There are a lot of numbers which will be explained below.')
     st.info(
         """
-        You can select each exam type using the buttons above.
-
-        These are a lot of numbers which we will explain here:
-
         
+        ### **TRAIN** vs **TEST** Data
+        The TRAIN tables show the results of training the model using
+        80% of the data available in the dataset.\n
+        The TEST tables show the results of the model predicting scores
+        based on **unseen** data since the remaining 20% of the data were
+        deliberately held back for this purpose.
+
+        Comparing the 2 allows us to assess how well the model training
+        process worked. If the train and test results are low, then the model 
+        might be *underfitted* and is not able to make any predictions on data
+        in general. Not very useful.\n
+        An *overfitted* model will have very good training results, but poor
+        test results, indicating also that the model can perfectly predict 
+        the trained data but is not able to generalize enough to assess unseen
+        data.
+
+        If the test values are the same or slightly better than train values
+        and are reasonably high, then a good balance was achieved.
+
+        ### Confusion Matrix
+        There a 4 types of predictions used in this 'Confusion Matrix:\n
+        |Type|Explanation |
+        |:---:|:---:|:---:|
+        | True Positive |  Model correctly predicts a student needs help|
+        | False Positive |  Model incorrectly predicts a student needs help|
+        | True Negative |  Model correctly predicts a student needs no help|
+        | False Negative |  Model incorrectly predicts a student needs no help|
+        
+        * A false positive result would mean that some students are flagged as
+        needing help when they might not. For the business case, this is
+        acceptable as it still achieves the overall obective of improving
+        average exam scores, but might use up a few more ressources.
+
+        * A false negative is problematic, as this represents students who **DO**
+        need help that are predicted to not need help. This would go against
+        the business objective, so the model performance and accuracy should
+        avoid too many false negatives in this case. 
+
+        ### Classification Report
+        * The Precision value indicates the percentage of times the model 
+        identifies a student that needs help.
+        * Recall indicates that the model is able to identify this percentage
+        of all students who might need help.
+        * F1 is a calculated balance between these 2 values and shows the 
+        general performance of the model.
+        
+        These values are calculated for each class, in this case the student
+        might need help, or will not need help.
+
+        * The macro average balances the values for all classes and is the most
+        general way of assessing the overall model performance.
+
+        * The weighted average also factors in the distribution of the data so
+        that the class with many more values would be considered. In this case
+        both classes are similar in size (above / below average) so we expect
+        the weighted average to be very close to the macro avg.
+
+        **The specific results of the models will be assessed in the 
+        Conclusion.**
         """
     )
