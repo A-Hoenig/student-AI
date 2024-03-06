@@ -184,7 +184,72 @@ The final implementation is shown below:
 #### Page 8 - Conclusions
 <img src="./src/doc_images/page-8.png" alt="page8" width="450"/>
 
+## Testing
+The project is build iteratively and as such tested continuoulsy as it it built.
+
+All python only files were passed through CodeInstitue [Pep8 Python linter.](https://pep8ci.herokuapp.com/)<br>
+All linting errors were fixed and all files return no issues. (Applies to all app pages, as well as ML custom function files)
+
+### Specific Manual Testing for Deployed app
+#### Jupyter Notebooks
+|Action/Story|Action|Result|
+|:---|:---|:---|
+|Notebooks general, packages|ensure all requirements are installed|no warning errors when importing|
+|Notebook1 - Load data|Connect to Kaggle to download dataset with API|Downloads correctly|
+|Notebook1 - Display Data|Run all cells and check dataset|Dislpays as expected|
+|Notebook2 - all cells run|Reset and Clear Outputs click RUN ALL|All cells run as expected|
+|Notebook3 - all cells run|Reset and Clear Outputs click RUN ALL|All cells run as expected|
+|Notebook3 - individual charts correct|check each variable is correctly plotted|All plots are correct|
+|Notebook3 - individual charts saved in correct location|delete files, run NB|All plots are generated and saved|
+|Notebook3 - individual text files saved in correct location|delete files, run NB|All text files are generated and saved|
+|Notebook4 - all cells run|Reset and Clear Outputs click RUN ALL|All cells run as expected|
+|Notebook4 - individual charts correct|check chart correctly plotted|All plots are correct|
+|Notebook4 - individual charts saved in correct location|delete files, run NB|All plots are generated and saved|
+|Notebook5 - all cells run|Reset and Clear Outputs click RUN ALL|All cells run as expected|
+|Notebook5 - interactive charts|manipulate charts and check they work|work as expected|
+|Notebook5 - interactive charts saved as HTML|delete html files and run cells|charts generated and saved as expected|
+|Notebook6 - all cells run|Reset and Clear Outputs click RUN ALL|All cells run as expected|
+|Notebook7 - all cells run|Reset and Clear Outputs click RUN ALL|All cells run as expected|
+|Notebook8a - all cells run|Reset and Clear Outputs click RUN ALL|All cells run as expected|
+|Notebook8b - all cells run|Reset and Clear Outputs click RUN ALL|All cells run as expected|
+|Notebook8c - all cells run|Reset and Clear Outputs click RUN ALL|All cells run as expected|
+|Notebook9a - all cells run|Reset and Clear Outputs click RUN ALL|All cells run as expected|
+|Notebook9a - models saved|delete model and rerun NB|model saved with correct version folder v1,v2 etc|
+|Notebook9b - all cells run|Reset and Clear Outputs click RUN ALL|All cells run as expected|
+|Notebook9b - models saved|delete model and rerun NB|model saved with correct version folder v1,v2 etc|
+|Notebook9c - all cells run|Reset and Clear Outputs click RUN ALL|All cells run as expected|
+|Notebook9c - models saved|delete model and rerun NB|model saved with correct version folder v1,v2 etc|
+|Notebook10 - all cells run|Reset and Clear Outputs click RUN ALL|All cells run as expected|
+
+#### Streamlit Dashboard
+|Action/Story|Action|Result|
+|:---|:---|:---|
+|App Displays|Start app in console for local machine|app loads correctly in browser|
+|Menu Buttons work|Click all menu buttons|correct page is loaded|
+|Intro Page|Display correcetly, links work|shown as expected|
+|Project hypotheses Page|Page load and displays correct content|as expected|
+|Data Intro Page|select page|all dataframes rendered correctly|
+|Data Intro Page|select page|all images rendered correctly|
+|Data Intro Page|select page|all tables rendered correctly|
+|Data Analysis Page loads correct|select page|displays correctly|
+|Data Analysis Page interactive buttons|Click all buttons/dropdowns|work as expected|
+|Data Analysis Page variable data correct|Select all variables|Data loads and displays correcet info|
+|Data Analysis Page Interactive Charts Display Correctly|click elements on chart|Behaves as exepcted & responsive|
+|Machine Learning Page loads correct|select page|all elements visible as expected|
+|Machine Learning Page confusion matrices|select all buttons|data loaded correctly for each variable|
+|Generate report page displays|select page|loads correctly|
+|Generate report page upload file|drag and drop student csv file|loads as expected and report is generated|
+|Generate report page upload bad file|drag and drop wrong student csv file|file is rejected as expected|
+|Generate report page reports|upload file|3 reports generated as expected|
+|Generate report page filters|select all filters|data is filtered as expected on all 3 reports|
+|Generate report page sorting|click all sort options and ascending / descending| works as expected for all 3|
+|Predict Student Results page|Click on Page|page loads and correct buttons are shown|
+|Predict Student Results predict button|click button|prediction is displayed as expected|
+|Predict Student Results predictions|click all radio button combos|new prediction generated and chages acc to model|
+|Conclusion Page loads|click on page button|displays as expected|
+
 ## Unfixed Bugs
+no known bugs remain.
  
 ## Deployment
 ### Heroku
@@ -199,7 +264,6 @@ The final implementation is shown below:
 4. Select the branch you want to deploy, then click Deploy Branch.
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
-
 
 ## Main Data Analysis and Machine Learning Libraries
 ### Libraries and Packages
