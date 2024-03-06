@@ -5,7 +5,11 @@ Find it on GitHub: <a href="https://github.com/A-Hoenig/student-AI">Student-AI</
 <img src="./src/doc_images/title.jpg" alt="title picture" width="400"/>
 
 ## Built With
-[GitPod](https://www.gitpod.io/)
+[GitPod](https://www.gitpod.io/)<br>
+[Jupyter Notebooks](https://jupyter.org/)<br>
+[Streamlit](https://streamlit.io/)<br>
+[Heroku](https://heroku.com)
+
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/A-Hoenig/student-AI?color=red&style=for-the-badge)
 ![GitHub contributors](https://img.shields.io/github/contributors/A-Hoenig/student-AI?color=orange&style=for-the-badge)
@@ -14,10 +18,10 @@ Find it on GitHub: <a href="https://github.com/A-Hoenig/student-AI">Student-AI</
 
 ## Introduction
 This project is built using python data science libraries embedded using jupyter notebooks.
-Jupyter notebooks are essentially a combination of a readme like this, but with embedded pythin code
+Jupyter notebooks are essentially a combination of a readme like this, but with embedded python code
 that can run natively inside cells.
 
-For detailed information, navigate to the jupyter_notebooks folder on the left, to view the project as it was built. The notebooks are in chronological order and take the reader through the data analysis steps to eventually create a machine learning model that can make a prediction. The use of random-state parameter means that, given the same input dataset, all steps are verifiable and can be recreated, achieving exactly the same result as in this project.
+**For detailed information, navigate to the jupyter_notebooks folder on the left, to view the project as it was built**. The notebooks are in chronological order and take the reader through the data analysis steps to eventually create a machine learning model that can make a prediction. The use of random-state parameter means that, given the same input dataset, all steps are verifiable and can be recreated, achieving exactly the same result as in this project.
 
 To make the project accessible to 'normal' users, the data is linked to a STREAMLIT dashboard that presents the result in a user friendly and interactive way. The interface also allows direct input to the prediction model and is the simulated final product that would be handed to a customer. (another, not implemented, solution would be an API).
 
@@ -33,23 +37,22 @@ For the purpose of this project, I will use the second set to demonstrate some d
 
 Available features are:
 
-* Gender: Gender of the student (male/female)
-* EthnicGroup: Ethnic group of the student (group A to E)
-* ParentEduc: Parent(s) education background (from some_highschool to master's degree)
-* LunchType: School lunch type (standard or free/reduced)
-* TestPrep: Test preparation course followed (completed or none)
-* ParentMaritalStatus: Parent(s) marital status (married/single/widowed/divorced)
-* PracticeSport: How often the student parctice sport (never/sometimes/regularly))
-* IsFirstChild: If the child is first child in the family or not (yes/no)
-* NrSiblings: Number of siblings the student has (0 to 7)
-* TransportMeans: Means of transport to school (schoolbus/private)
-* WklyStudyHours: Weekly self-study hours(less that 5hrs; between 5 and 10hrs; more than 10hrs)
-* MathScore: math test score(0-100)
-* ReadingScore: reading test score(0-100)
-* WritingScore: writing test score(0-100)
+* **Gender:** Gender of the student (male/female)
+* **EthnicGroup:** Ethnic group of the student (group A to E)
+* **ParentEduc:** Parent(s) education background (from some_highschool to master's degree)
+* **LunchType:** School lunch type (standard or free/reduced)
+* **TestPrep:** Test preparation course followed (completed or none)
+* **ParentMaritalStatus:** Parent(s) marital status (married/single/widowed/divorced)
+* **PracticeSport:** How often the student parctice sport (never/sometimes/regularly)
+* **IsFirstChild:** If the child is first child in the family or not (yes/no)
+* **NrSiblings:** Number of siblings the student has (0 to 7)
+* **TransportMeans:** Means of transport to school (schoolbus/private)
+* **WklyStudyHours:** Weekly self-study hours(less that 5hrs; between 5 and 10hrs; more than 10hrs)
+* **MathScore:** math test score(0-100)
+* **ReadingScore:** reading test score(0-100)
+* **WritingScore:** writing test score(0-100)
 
 The target(s) will be the predicted score for Math, Reading and Writing for a given student.
-
 
 ## Business Requirements
 
@@ -73,11 +76,11 @@ As a **'Role'**, I can **'Capability'**, so that **'Receive benefit'**
 |Counsellor|upload a student csv file|I can get a generated report of all prediction results|
 |Counsellor|view the conclusion page|I can see what to expect from the ML predictions|
 |Data Practitioner|view the ML details page|I can get deep insight into how the models were generated|
-|Data Practitioner|view teh cleaner dataset|I can gain insight into data imputing and feature engineering|
+|Data Practitioner|view the cleaner dataset|I can gain insight into data imputing and feature engineering|
 
 ## Hypothesis
 
-I hypothesize that most of the listed Features in the available student dataset will have some degree of influence on the overall performance of the student.
+I hypothesize that most of the listed features in the available student dataset will have some degree of influence on the overall performance of the student.
 
 ### Gender: Gender of the student (male/female)
 depending on the subject, gender will probably influence the students overall performance.
@@ -105,20 +108,32 @@ I hypothesize that the mount of study time per week devoted to exam preparation 
 
 ## The rationale to map the business requirements to the Data Visualizations and ML tasks
 * The dataset with final results for Math, Reading and Writing will allow an EDA to identify which features of the data set have the most influence on the student performance.  This will allow a reasonable assessment of the evaluation of my hypothesies and corrobrate the schools assumptions so far. 
-* The new step and direect business requirement will be to train a machine learning algorithm to predict the final score on a new class of students on unseen data. To achieve this, some feature enineering might be neccessary to encode categorical varibles into numerical values which can be interpreted by an ML pipleine. The initial approach will be supervised learning on known student results while allowing the algorithm to identify the key features that have the most influence on teh result.
-* To satisfy the business requirement, we aim to train the model to have a greater than 0.6 accuracy in predicting the scores for math, reading and writing
+
+* The new step and direect business requirement will be to train a machine learning algorithm to predict the final score on a new class of students on unseen data. To achieve this, some feature enineering might be neccessary to encode categorical varibles into numerical values which can be interpreted by an ML pipleine. The initial approach will be supervised learning on known student results while allowing the algorithm to identify the key features that have the most influence on the result.
+
+* To satisfy the business requirement, we aim to train the model to have a greater than 0.6 accuracy in predicting the scores for math, reading and writing.
 
 
 ## ML Business Case
 * ML will help in identifying key features of the data that significantly impact the final scores of a given student. Armed with this knowledge, ML gives the unique capability to predict the probable student outcome and allow early intervention to ensure good student performance throught the school year.
 
-
 ## Dashboard Design
 * The dashboard will analyze and display student data, including math, reading, and writing scores.
-* It will incorporate various student features such as sex, weekly study hours, lunch type, parental status, and parental education levels.
+* It will incorporate various student features such as gender, weekly study hours, lunch type, parental status, and parental education levels.
 * The tool will predict individual student scores based on entered data, using machine learning algorithms.
 * It will flag students who are likely to struggle in achieving passing grades, enabling timely intervention.
 * The dashboard will generate reports listing students who may require additional support or resources.
+
+### Dashboard Mockups
+Since the project will use a Streamlit Dashboard, the design is relatively limited. It is essentially a menu on the left allowing selection of individual pages. The main page to the right can contain mutlimedia in the form of charts, dataframes, text, info boxes as well as buttons, sliders etc. Due to this limitation, the design choices were relatively simple. For this project the choices were:
+
+- Information Only
+- Interactive Page for select or manipulate data
+- Model interaction for data input and prediction (button, file upload)
+
+the basic layout will be like this:
+
+<img src="./src/doc_images/wireframes.png" alt="wireframes" width="900"/>
 
 ### Dashboard Pages:
 
@@ -132,17 +147,49 @@ I hypothesize that the mount of study time per week devoted to exam preparation 
 - **Machine Learning Deatils** - A more in depth look at the technical aspectes of feature enginerring, model piple selection and model training and testing. This page is for the datapractitioners in the organization that have some more in depth knowledge of the process.
 
 #### Prediction
-- **Generate Report** - Page that allows teh counsellor to upload a cvs  list of new students and generate a report. The report list the ML predictions for each student.
+- **Generate Report** - Page that allows the counsellor to upload a cvs  list of new students and generate a report. The report list the ML predictions for each student.
 - **Predict Student Results** Summary page for education experts interested in the model training steps and performance levels.
 
 #### Conclusion
+- **Conclusion** - Recap the project and identify issues with the model and assess the validity of the made hypotheses.
+
+### Dashboard Screenshots
+
+The final implementation is shown below:
+
+#### Page 1 - Introduction
+<img src="./src/doc_images/page-1.png" alt="page1" width="450"/>
+
+#### Page 2 - Hypotheses
+<img src="./src/doc_images/page-2.png" alt="page2" width="450"/>
+
+#### Page 3 - Dataset Introduction
+<img src="./src/doc_images/page-3.png" alt="page3" width="450"/>
+
+#### Page 4 - Detailed Data Analysis
+<img src="./src/doc_images/page-4.png" alt="page4" width="450"/>
+
+<img src="./src/doc_images/page-4b.png" alt="page4b" width="450"/>
+
+#### Page 5 - Machine Learning Details
+<img src="./src/doc_images/page-5.png" alt="page5" width="450"/>
+
+#### Page 6 - Generate Report Page
+<img src="./src/doc_images/page-6.png" alt="page6" width="450"/>
+<img src="./src/doc_images/page-6b.png" alt="page6b" width="450"/>
+
+#### Page 7 - Student Prediction Page
+<img src="./src/doc_images/page-7.png" alt="page7" width="450"/>
+
+#### Page 8 - Conclusions
+<img src="./src/doc_images/page-8.png" alt="page8" width="450"/>
 
 ## Unfixed Bugs
  
 ## Deployment
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+* The App live link is: https://student-ai-f1a195bb5d91.herokuapp.com/
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 * The project was deployed to Heroku using the following steps.
 
@@ -155,27 +202,58 @@ I hypothesize that the mount of study time per week devoted to exam preparation 
 
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+### Libraries and Packages
+
+- [NumPy](https://numpy.org/) was used for basic mathematical operations such as standard deviations and mean values
+
+- [Pandas](https://pandas.pydata.org/) was used for many operations:
+    - Loading CSV files into Series and Dataframes
+    - Saving Series and Dataframes as CSV, txt and HTTP files
+    - Creating and modifying Series and Dataframes
+    - The correlation method for conduction the correlation study
+
+- [MatPlotLib](https://matplotlib.org/) and [Seaborn](https://seaborn.pydata.org/) were used for constructing plots to visualise my data analyses, in particular countplots and barplots
+
+- [Plotly](https://plotly.com/python/) was used for constructing interactive plots for both the notebooks as well as embedding in the dashboard for more interactivity
+
+- [Feature Engine](https://feature-engine.readthedocs.io/en/1.1.x/) was used for machine learning tasks:
+    - The OrdinalEncoder allows the categorial data to be converted to numbers befor eit can be passed to an ML regression or classification task.
+    - The EqualFrequencyDiscretiser and ArbitraryDiscretiser modules allowed the numerical variables to be equally distributed into 'bins' to allow a classification task.
+    - The OneHotEncoder allows the dataset to be transformed for a correlation study
+  
+- [SciKit Learn](https://scikit-learn.org/stable/) was used for machine learning tasks:
+    - Provided the various algorithms used to train the regression and classification model
+    - Pipeline for building machine learning pipelines
+    - SelectFromModel for feature selection steps in the pipelines
+    - Train-Test Split for creating train and test sets
+    - Make Scorer and Recall Score for assessing algorithm and hyperparameter performance
+    - Classification Report and Confusion Matrix for constructing classification reports and confusion matrices for assessing model performance
+
+- [XGBBoost](https://xgboost.readthedocs.io/en/latest/index.html) provided the XGBoost Regressor and XGBoost Classifier algorithms
+
+- [Pinguoin](https://pingouin-stats.org/api.html) was used for the Shapiro-Wilk test for normal distribution
+
+- [Predictive Power Score](https://github.com/8080labs/ppscore) was used for conducting a Predictive Power Score analysis
+
+### Resources
+
+The following resources were used to assist in the construction of this project:
+
+- The dataset used in this project is located [here](https://www.kaggle.com/datasets/desalegngeb/students-exam-scores).
+
+- My CodeInstitute walkthrough project [(Churnometer)](https://github.com/A-Hoenig/churnometer) was the baseline for this project.<br> 
+The project provided many custom functions that automated much of the model and hyperparameter selection and evaluation. I modified them to be more universally usable and centrally available. The main ones were:
+    - The HyperparameterOptimizationSearch class, for testing several algorithms and their hyperparameters
+    - The custom functions for generating lassification reports and a confusion matrices (I modified this one to output markdown formatted text which could be directly embedded in the streamlit dashboard)
+    - Custom Function for feature importance listing
+
+- Additionally the Project Walkthrough provided a basic and generic template for the streamlit multipage app that allowed the deployed app to be generated relatively quickly. I modifed it quite a bit to be more interactive and dynamic. The project is automated to the point where the jupyter notebooks generate charts, dataframes, models and text automatically and share directly with the streamlit app. (on the local machine) - that way any changes to the ML pipeline or updates to the model are immediately available for testing in the local streamlit front end, and can then be committed to the deployed app on Heroku.
 
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
-
-
+- PP5 project by Adam Boley [(here)](https://github.com/AdamBoley/Exam-Scores-Analysis/) helped me greatly in understanding the theoretical principles again after the course content was completed.
 
 ## Acknowledgements (optional)
-* Thank the people that provided support through this project.
+- Thanks to my mentor Precious Ijege for some valuable insights into the state of my project and real world applications. Thanks!
 
