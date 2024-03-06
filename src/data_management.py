@@ -20,6 +20,7 @@ def load_original_data():
     df = pd.read_csv("inputs/dataset/Expanded_data_with_more_features.csv")
     return df
 
+
 @st.cache(suppress_st_warning=True, allow_output_mutation=True)
 def load_cleaned_data():
     df = pd.read_csv(
@@ -39,7 +40,7 @@ def load_pkl_file(file_path):
 def load_image(image_name):
     # possible extensions
     extensions = ['.png', '.jpg', '.jpeg', '.gif']
-    
+
     for ext in extensions:
         try:
             # Attempt to open the image with each extension
@@ -49,16 +50,16 @@ def load_image(image_name):
         except FileNotFoundError:
             # If not found continue to the next extension type
             continue
-    
-    # no file is found 
+
+    # no file is found
     image = Image.open("src/doc_images/image-not-found.jpeg")
     return image
-    
+
 
 def load_plot(image_name):
     # possible extensions
     extensions = ['.png', '.jpg', '.jpeg', '.gif']
-    
+
     for ext in extensions:
         try:
             # Attempt to open the image with each extension
@@ -68,8 +69,8 @@ def load_plot(image_name):
         except FileNotFoundError:
             # If not found continue to the next extension type
             continue
-    
-    # no file is found 
+
+    # no file is found
     image = Image.open("src/doc_images/plot-not-found.png")
     return image
 
@@ -77,7 +78,7 @@ def load_plot(image_name):
 def load_text(filename):
     # Define the full path
     filepath = os.path.join(TXT_PATH, filename)
-    
+
     try:
         # Load and return text
         with open(filepath, 'r') as file:
@@ -123,14 +124,14 @@ def save_analysis(text, filename, directory=TXT_PATH):
     # Create directory if it doesn't exist
     if not os.path.exists(directory):
         os.makedirs(directory)
-    
+
     # Define the full path
     filepath = os.path.join(directory, filename)
-    
+
     # If a file with the same name already exists, remove it
     if os.path.isfile(filepath):
         os.remove(filepath)
-    
+
     # Save the text
     with open(filepath, 'w') as file:
         file.write(text)
@@ -142,15 +143,15 @@ def confusion_matrix_and_report(x, y, pipeline, label_map):
 
     # Confusion matrix to markdown table
     cm_df = pd.DataFrame(confusion_matrix(y, prediction),
-                         columns=[f"Actual {sub}" for sub in label_map], 
+                         columns=[f"Actual {sub}" for sub in label_map],
                          index=[f"Prediction {sub}" for sub in label_map])
     output.write('#### Confusion Matrix\n\n')
     output.write(cm_df.to_markdown())
     output.write("\n\n")
 
     # Classification Report to markdown table
-    report = classification_report(y, prediction, 
-                                   target_names=label_map, 
+    report = classification_report(y, prediction,
+                                   target_names=label_map,
                                    output_dict=True)
     report_df = pd.DataFrame(report).transpose()
 
@@ -171,10 +172,11 @@ def confusion_matrix_and_report(x, y, pipeline, label_map):
 
     return output.getvalue()
 
+
 def clf_performance(
-    train_features, train_scores, 
-    test_features, test_scores, 
-    pipeline, label_map, column):
+        train_features, train_scores,
+        test_features, test_scores,
+        pipeline, label_map, column):
 
     # Column Title
     column_cap = column.capitalize()

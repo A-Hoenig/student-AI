@@ -1,3 +1,28 @@
+# Student-AI ... Machine Learning Project
+
+Find it on GitHub: <a href="https://github.com/A-Hoenig/student-AI">Student-AI</a>
+
+<img src="./src/doc_images/title.jpg" alt="title picture" width="400"/>
+
+## Built With
+[GitPod](https://www.gitpod.io/)
+
+![GitHub last commit](https://img.shields.io/github/last-commit/A-Hoenig/student-AI?color=red&style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/A-Hoenig/student-AI?color=orange&style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/A-Hoenig/student-AI?color=yellow&style=for-the-badge)
+![GitHub top language](https://img.shields.io/github/languages/top/A-Hoenig/student-AI?color=green&style=for-the-badge)
+
+## Introduction
+This project is built using python data science libraries embedded using jupyter notebooks.
+Jupyter notebooks are essentially a combination of a readme like this, but with embedded pythin code
+that can run natively inside cells.
+
+For detailed information, navigate to the jupyter_notebooks folder on the left, to view the project as it was built. The notebooks are in chronological order and take the reader through the data analysis steps to eventually create a machine learning model that can make a prediction. The use of random-state parameter means that, given the same input dataset, all steps are verifiable and can be recreated, achieving exactly the same result as in this project.
+
+To make the project accessible to 'normal' users, the data is linked to a STREAMLIT dashboard that presents the result in a user friendly and interactive way. The interface also allows direct input to the prediction model and is the simulated final product that would be handed to a customer. (another, not implemented, solution would be an API).
+
+The working project is deployed on Heroku [HERE](https://student-ai-f1a195bb5d91.herokuapp.com/)
+
 ## Dataset Content
 The dataset provided is a list of fictitious student performance data from an unnamed college. The dataset can be found here:
 https://www.kaggle.com/datasets/desalegngeb/students-exam-scores
@@ -34,8 +59,21 @@ The following metrics were decided with the stakeholder (school administration) 
 The primary objective is to create an interactive, user-friendly dashboard for school counselors and educators. This tool aims to predict student performance in math, reading, and writing, focusing on identifying students at risk of not achieving a passing grade. The dashboard will facilitate early intervention and personalized support strategies. The dashboard should be deployed to their internal server and allow counsellors secure access to the database and prediction model so they can prepapre for student counselling sessions.
 
 ## User stories
+  
+*template:*<br>
+As a **'Role'**, I can **'Capability'**, so that **'Receive benefit'**
 
-
+|As a...|I can ...|so that ...|
+|:---|:---|:---|
+|Counsellor|open the dashboard|I can view the ML project|
+|Counsellor|view the dataset|I can see what the original data looks like|
+|Counsellor|click the nav buttons|I can select the different project pages|
+|Counsellor|select radio buttons|I can choose the exam type to display|
+|Counsellor|select student variables on the predict page|the model will make a prediction|
+|Counsellor|upload a student csv file|I can get a generated report of all prediction results|
+|Counsellor|view the conclusion page|I can see what to expect from the ML predictions|
+|Data Practitioner|view the ML details page|I can get deep insight into how the models were generated|
+|Data Practitioner|view teh cleaner dataset|I can gain insight into data imputing and feature engineering|
 
 ## Hypothesis
 
@@ -84,12 +122,20 @@ I hypothesize that the mount of study time per week devoted to exam preparation 
 
 ### Dashboard Pages:
 
-1. **Project Summary** - An introduction to the business requirement and key features of the dataset. Also an bsic instruction of how to use the dashboard
-2. **Project Hypothesis and evaluation** - presentation of the project hyposthesis and potential outcomes
-3. **Exploratory Data Analysis (EDA)** - EDA of the dataset and explanation of the dataset strengths and weaknesses
-4. **Report Generator** Page to generate a report of all students enrolled in the school in danger of not reaching a passing grade in Math. The user will be able to selecte the passing grade as a percentage
-5. **Prediction Engine** - Page to allow the counsellor to input all known variables about a new student (or changes in circumstance of a known student) and predict the current score probablilty.
-6. **Technical Explanations** Summary page for education experts interested in the model training steps and performance levels.
+#### INTRO
+- **Introduction** - An introduction to the business requirement, the initial development strategy and an ethical assessment.
+- **Project Hypotheses** - presentation of the project hypostheses.
+
+#### DATA ANALYSIS
+- **Data Intro / Cleaning** - Basic introdcution to the data set and initial steps of data cleaning.
+- **Data Analysis** In depth analysis of each dataset feature and variables. Interactive buttons are incorporated to allow the user to explore in their own interest and ensure they are not 'bombarded' with data.
+- **Machine Learning Deatils** - A more in depth look at the technical aspectes of feature enginerring, model piple selection and model training and testing. This page is for the datapractitioners in the organization that have some more in depth knowledge of the process.
+
+#### Prediction
+- **Generate Report** - Page that allows teh counsellor to upload a cvs  list of new students and generate a report. The report list the ML predictions for each student.
+- **Predict Student Results** Summary page for education experts interested in the model training steps and performance levels.
+
+#### Conclusion
 
 ## Unfixed Bugs
  
