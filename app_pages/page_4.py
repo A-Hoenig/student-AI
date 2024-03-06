@@ -9,7 +9,8 @@ WIDTH=300
 #Columns user can select in dropdown
 columns_list = ['Gender', 'EthnicGroup', 'ParentEduc', 'LunchType', 
                     'TestPrep', 'ParentMaritalStatus', 'PracticeSport', 
-                    'IsFirstChild', 'NrSiblings', 'TransportMeans']
+                    'IsFirstChild', 'NrSiblings', 'TransportMeans',
+                    'WklyStudyHours']
 
 def page_4_body():
 
