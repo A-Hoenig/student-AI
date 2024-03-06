@@ -72,6 +72,7 @@ As a **'Role'**, I can **'Capability'**, so that **'Receive benefit'**
 |Counsellor|view the dataset|I can see what the original data looks like|
 |Counsellor|click the nav buttons|I can select the different project pages|
 |Counsellor|select radio buttons|I can choose the exam type to display|
+|Counsellor|click the interactive buttons|I can view data anlayses and gain insights|
 |Counsellor|select student variables on the predict page|the model will make a prediction|
 |Counsellor|upload a student csv file|I can get a generated report of all prediction results|
 |Counsellor|view the conclusion page|I can see what to expect from the ML predictions|
