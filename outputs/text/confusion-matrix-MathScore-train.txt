@@ -1,0 +1,18 @@
+Mathscore - Train Set
+
+#### Confusion Matrix
+
+|                                  |   Actual Might need assistance |   Actual No assistance needed |
+|:---------------------------------|-------------------------------:|------------------------------:|
+| Prediction Might need assistance |                          10531 |                          2214 |
+| Prediction No assistance needed  |                           8120 |                          3647 |
+
+#### Classification Report
+
+|                       | precision   | recall   |   f1-score | support   |
+|:----------------------|:------------|:---------|-----------:|:----------|
+| Might need assistance | 0.565       | 0.826    |      0.671 | 12745     |
+| No assistance needed  | 0.622       | 0.31     |      0.414 | 11767     |
+| accuracy              |             |          |      0.578 |           |
+| macro avg             | 0.593       | 0.568    |      0.542 | 24512     |
+| weighted avg          | 0.592       | 0.578    |      0.547 | 24512     |

@@ -1,0 +1,18 @@
+Mathscore - Test Set
+
+#### Confusion Matrix
+
+|                                  |   Actual Might need assistance |   Actual No assistance needed |
+|:---------------------------------|-------------------------------:|------------------------------:|
+| Prediction Might need assistance |                           2664 |                           561 |
+| Prediction No assistance needed  |                           1970 |                           934 |
+
+#### Classification Report
+
+|                       | precision   | recall   |   f1-score | support   |
+|:----------------------|:------------|:---------|-----------:|:----------|
+| Might need assistance | 0.575       | 0.826    |      0.678 | 3225      |
+| No assistance needed  | 0.625       | 0.322    |      0.425 | 2904      |
+| accuracy              |             |          |      0.587 |           |
+| macro avg             | 0.6         | 0.574    |      0.551 | 6129      |
+| weighted avg          | 0.599       | 0.587    |      0.558 | 6129      |
