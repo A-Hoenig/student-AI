@@ -15,13 +15,13 @@ from app_pages.page_8 import page_8_body
 app = MultiPage(app_name="Student AI")
 
 # Add your app pages here using .add_page()
-app.add_page("Introduction", page_1_body, "Intro")
-app.add_page("Project Hypotheses", page_2_body, "Intro")
-app.add_page("Data Intro / Cleaning", page_3_body, "Data Analysis")
-app.add_page("Data Analysis", page_4_body, "Data Analysis")
-app.add_page("Machine Learning Details", page_7_body, "Data Analysis")
-app.add_page("Generate Report", page_5_body, "Prediction")
-app.add_page("Predict Student Results", page_6_body, "Prediction")
-app.add_page("Conclusion", page_8_body, "Conclusion")
+app.add_page("INTRO: Introduction", page_1_body)
+app.add_page("INTRO: Project Hypotheses", page_2_body)
+app.add_page("ANALYSIS: Data Intro / Cleaning", page_3_body)
+app.add_page("ANALYSIS: Data Analysis", page_4_body)
+app.add_page("ANALYSIS: Machine Learning Details", page_7_body)
+app.add_page("PREDICT: Generate Report", page_5_body)
+app.add_page("PREDICT: Predict Student Results", page_6_body)
+app.add_page("FINAL: Conclusion", page_8_body)
 
 app.run()  # Run the app

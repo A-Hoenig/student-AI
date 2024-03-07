@@ -77,7 +77,7 @@ As a **'Role'**, I can **'Capability'**, so that **'Receive benefit'**
 |Counsellor|upload a student csv file|I can get a generated report of all prediction results|
 |Counsellor|view the conclusion page|I can see what to expect from the ML predictions|
 |Data Practitioner|view the ML details page|I can get deep insight into how the models were generated|
-|Data Practitioner|view the cleaner dataset|I can gain insight into data imputing and feature engineering|
+|Data Practitioner|view the cleaned dataset|I can gain insight into data imputing and feature engineering|
 
 ## Hypothesis
 
@@ -186,13 +186,24 @@ The final implementation is shown below:
 <img src="./src/doc_images/page-8.png" alt="page8" width="450"/>
 
 ## Testing
-The project is build iteratively and as such tested continuoulsy as it it built.
+The project is built iteratively and as such tested continuously as it is built.
 
 All python only files were passed through CodeInstitue [Pep8 Python linter.](https://pep8ci.herokuapp.com/)<br>
 All linting errors were fixed and all files return no issues. (Applies to all app pages, as well as ML custom function files)
 
-### Specific Manual Testing for Deployed app
-#### Jupyter Notebooks
+Deployed app tested on 
+* Chrome
+* Firefox
+* Safari (MacOS, iPad and iPhone)
+
+The streamlit app renders responsive and works in all browsers.
+
+The dashboard rendering can get corrupted on smaller phone displays when CSS from streamlit does not adjust.
+
+As the primary usecase is as a destop application running in the school office, this was considered not a significant issue.
+
+## Specific Manual Testing for Deployed app
+### Jupyter Notebooks
 |Action/Story|Action|Result|
 |:---|:---|:---|
 |Notebooks general, packages|ensure all requirements are installed|no warning errors when importing|
@@ -222,12 +233,12 @@ All linting errors were fixed and all files return no issues. (Applies to all ap
 |Notebook9c - models saved|delete model and rerun NB|model saved with correct version folder v1,v2 etc|
 |Notebook10 - all cells run|Reset and Clear Outputs click RUN ALL|All cells run as expected|
 
-#### Streamlit Dashboard
+### Streamlit Dashboard
 |Action/Story|Action|Result|
 |:---|:---|:---|
 |App Displays|Start app in console for local machine|app loads correctly in browser|
 |Menu Buttons work|Click all menu buttons|correct page is loaded|
-|Intro Page|Display correcetly, links work|shown as expected|
+|Intro Page|Display correctly, links work|shown as expected|
 |Project hypotheses Page|Page load and displays correct content|as expected|
 |Data Intro Page|select page|all dataframes rendered correctly|
 |Data Intro Page|select page|all images rendered correctly|
@@ -249,8 +260,20 @@ All linting errors were fixed and all files return no issues. (Applies to all ap
 |Predict Student Results predictions|click all radio button combos|new prediction generated and chages acc to model|
 |Conclusion Page loads|click on page button|displays as expected|
 
+### Heroku Dashboard
+|Action/Story|Action|Result|
+|:---|:---|:---|
+|App Displays|Load Heroku App webpage|app loads correctly in browser|
+
+**all other tests were repeated as for the streamlit app. all tests passed as exepcted.**
+
 ## Unfixed Bugs
 no known bugs remain.
+the only issue that cannot be ruled out is constant deprecation of ML packages.
+
+ML packages were notoriously tricky to install and ensure the correct versions are able to work together
+Many functions output *deprecation* and *FutureWarnings.*
+For an live project, this would require regular updates to refactor the code to the newest packages
  
 ## Deployment
 ### Heroku
@@ -268,7 +291,7 @@ no known bugs remain.
 
 ### Local Machine
 
-* Fork this repository
+* Clone this repository
 * Open Repo in your IDE (VS Code or GitPod, etc)
 * Ensure virtual environment is set up (**python3 -m venv .venv**)
 * Install requirements_dev.txt (**pip install -r requirements_dev.txt**)
