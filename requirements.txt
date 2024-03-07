@@ -1,3 +1,4 @@
+altair==4.2.0
 click==7.1.2
 comm==0.2.1
 contourpy==1.0.6
