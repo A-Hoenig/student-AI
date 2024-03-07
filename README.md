@@ -266,6 +266,16 @@ no known bugs remain.
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
+### Local Machine
+
+* Fork this repository
+* Open Repo in your IDE (VS Code or GitPod, etc)
+* Ensure virtual environment is set up (**python3 -m venv .venv**)
+* Install requirements_dev.txt (**pip install -r requirements_dev.txt**)
+* To View the Dashboard on local machine in CLI type: **streamlit run app.py** and click open browser
+* In the Jupyter notebooks, select the **Python kernel** before running cells
+* *(The requirements.txt file does not contain development libraries and is only for deployment to heroku)*
+
 ## Main Data Analysis and Machine Learning Libraries
 ### Libraries and Packages
 
