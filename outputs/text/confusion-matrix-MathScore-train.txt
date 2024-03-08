@@ -2,17 +2,19 @@ Mathscore - Train Set
 
 #### Confusion Matrix
 
-|                                  |   Actual Might need assistance |   Actual No assistance needed |
-|:---------------------------------|-------------------------------:|------------------------------:|
-| Prediction Might need assistance |                          10153 |                          2652 |
-| Prediction No assistance needed  |                           7286 |                          4421 |
+|                                  |   Actual Might need assistance |   Actual Average |   Actual Above Avg |
+|:---------------------------------|-------------------------------:|-----------------:|-------------------:|
+| Prediction Might need assistance |                           5132 |              553 |               2065 |
+| Prediction Average               |                           4196 |              599 |               2955 |
+| Prediction Above Avg             |                           3033 |              588 |               4129 |
 
 #### Classification Report
 
 |                       | precision   | recall   |   f1-score | support   |
 |:----------------------|:------------|:---------|-----------:|:----------|
-| Might need assistance | 0.582       | 0.793    |      0.671 | 12805     |
-| No assistance needed  | 0.625       | 0.378    |      0.471 | 11707     |
-| accuracy              |             |          |      0.595 |           |
-| macro avg             | 0.604       | 0.585    |      0.571 | 24512     |
-| weighted avg          | 0.603       | 0.595    |      0.576 | 24512     |
+| Might need assistance | 0.415       | 0.662    |      0.51  | 7750      |
+| Average               | 0.344       | 0.077    |      0.126 | 7750      |
+| Above Avg             | 0.451       | 0.533    |      0.489 | 7750      |
+| accuracy              |             |          |      0.424 |           |
+| macro avg             | 0.404       | 0.424    |      0.375 | 23250     |
+| weighted avg          | 0.404       | 0.424    |      0.375 | 23250     |
