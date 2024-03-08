@@ -54,6 +54,32 @@ def page_4_body():
         caption=f'QQ Plots show if the data is normally distributed.',
         use_column_width='auto',
         )
+    
+    st.info(
+        """
+        There are many plots here showing various statistical summaries of
+        the numerical data for Math, Reading, Writing and their Mean score.
+
+        For ML purposes, we want to assess that the distribution is as
+        'normal' as possible which helps with model performance. In this
+        case, 'normal' usually mean that typical bell curve that is a common
+        shape when plotting data.
+
+        In this case, it can be seen that the data **'looks'** normal, but more
+        detailed tests are needed to make sure it **'is'** normal.
+
+        One useful plot is the QQ plot at the bottom which compares actual 
+        values vs a perfect normal distribution shape. If the blue line
+        matches the red, the data can be considered 'normal'. 
+        Another indicator is the R2 value of 0.99, where a prefectly normal
+        distribution has a value of 1. This is a good indcator that the
+        score values are 'normal' and will not affect the model performance.
+
+        The box plots are another visual indication that the data is
+        concentrated around the mean score and there aren't too many
+        'outliers' which would confuse the prediction accuracy.
+        """
+    )
 
     st.write('---')
     st.write('# Variable relationships to Scores')

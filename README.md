@@ -260,6 +260,12 @@ As the primary usecase is as a destop application running in the school office, 
 |Predict Student Results predictions|click all radio button combos|new prediction generated and chages acc to model|
 |Conclusion Page loads|click on page button|displays as expected|
 
+### Generate test CSV File
+To test the report function which needs a CSV file, there is a Jupyter notebook cell at the end of Notebook 2 which generates 
+a random selection of students from the main dataset without the scores. optionally it can be created 'invalid' by allowing
+rows with missing values.
+A previously generated csv file is saved [here](./inputs/dataset/student_random_list.csv) in the **'./inputs/dataset/'** folder.
+
 ### Heroku Dashboard
 |Action/Story|Action|Result|
 |:---|:---|:---|
